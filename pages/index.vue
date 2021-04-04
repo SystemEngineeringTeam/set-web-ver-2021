@@ -7,7 +7,7 @@
     <News />
     <Question />
     <Contact />
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
