@@ -1,23 +1,27 @@
 <template>
   <v-footer padless>
     <v-card flat tile width="100%" color="#2F2F2F" class="text-center">
-      <v-card-text class="footertitle white--text font-weight-black">
+      <v-card-text class="mt-3 footertitle white--text font-weight-black">
         SystemEngineeringTeam
       </v-card-text>
-      <v-card-text
-        class="white--text pt-2 footerTitileMin font-weight-light"
-        justify="center"
-      >
+      <v-card-text class="white--text pt-1 footerTitileMin font-weight-light">
         We're a club in Aichi Institute of Technology
       </v-card-text>
       <v-card-text class="pt-0 pb-0">
-        <v-btn v-for="icon in icons" :key="icon" class="pt-2 white--text" icon>
+        <v-btn
+          v-for="item in items"
+          :key="item"
+          class="pt-0 mx-6 white--text"
+          icon
+          :href="item.url"
+        >
           <v-icon size="28px">
-            {{ icon }}
+            {{ item.icon }}
           </v-icon>
         </v-btn>
       </v-card-text>
-      <v-card-text class="text-no-wrap footerbottom white--text">
+
+      <v-card-text class="text-no-wrap footerbottom pt-4 pb-0 white--text">
         © {{ new Date().getFullYear() }} システム工学研究会. All Rights
         Reserved.
       </v-card-text>
@@ -27,10 +31,52 @@
 
 <script>
 export default {
-  data: () => ({
-    icons: ["mdi-twitter", "mdi-github", "mdi-book-open-blank-variant"],
-  }),
+  data() {
+    return {
+      items: [
+        {
+          icon: "mdi-twitter",
+          url: "https://twitter.com/set_official",
+        },
+        {
+          icon: "mdi-github",
+          url: "https://github.com/SystemEngineeringTeam",
+        },
+        {
+          icon: "mdi-book-open-blank-variant",
+          url: "https://set1.ie.aitech.ac.jp/blog/",
+        },
+      ],
+      pages: [
+        {
+          text: "Top",
+          url: "/top",
+        },
+        {
+          text: "About",
+          url: "/about",
+        },
+        {
+          text: "Product",
+          url: "/product",
+        },
+        {
+          text: "News",
+          url: "/news",
+        },
+        {
+          text: "Question",
+          url: "/question",
+        },
+        {
+          text: "Contact",
+          url: "/contact",
+        },
+      ],
+    };
+  },
 };
+//["mdi-twitter", "mdi-github", "mdi-book-open-blank-variant"],
 </script>
 
 <style>
@@ -38,7 +84,7 @@ export default {
   font-size: 35px;
 }
 .footerTitileMin {
-  font-size: 14px;
+  font-size: 15px;
 }
 .footerbottom {
   font-size: 12px;
