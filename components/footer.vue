@@ -47,32 +47,6 @@ export default {
           url: "https://set1.ie.aitech.ac.jp/blog/",
         },
       ],
-      pages: [
-        {
-          text: "Top",
-          url: "/top",
-        },
-        {
-          text: "About",
-          url: "/about",
-        },
-        {
-          text: "Product",
-          url: "/product",
-        },
-        {
-          text: "News",
-          url: "/news",
-        },
-        {
-          text: "Question",
-          url: "/question",
-        },
-        {
-          text: "Contact",
-          url: "/contact",
-        },
-      ],
     };
   },
 };
