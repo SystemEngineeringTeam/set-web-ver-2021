@@ -5,7 +5,7 @@
             <v-col cols="6">
                 <v-card
                     dark
-                    width="800"
+                    width="90%"
                     height="400"
                 >
                 部室でコーディングしている画像
@@ -30,7 +30,7 @@
             <v-col cols="6">
                 <v-card
                     dark
-                    width="800"
+                    width="90%"
                     height="400"
                 >
                 部室でPCのメモリ抜き差ししてる画像
