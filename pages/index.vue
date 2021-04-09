@@ -3,6 +3,7 @@
     <h1>Home</h1>
     <Top />
     <About />
+    <AboutDet />
     <Product />
     <Team />
     <News />
