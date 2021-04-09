@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-container>
-      <v-row>
-        <v-col>
+      <v-row class="ma-1">
+        <v-col class="ma-4">
           <h2 class="font-weight-bold">勉強会</h2>
-          <p>
+          <p class="mt-3">
             asaライブラリ「vue-tinybox」をインストールすると、lightbox
             galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
           </p>
@@ -13,9 +13,9 @@
             aspect-ratio="2"
           ></v-img>
         </v-col>
-        <v-col>
+        <v-col class="ma-4">
           <h2 class="font-weight-bold">ハッカソン</h2>
-          <p>
+          <p class="mt-3">
             ライブラリ「vue-tinybox」をインストールすると、lightbox
             galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
           </p>
@@ -25,10 +25,10 @@
           ></v-img
         ></v-col>
       </v-row>
-      <v-row>
-        <v-col>
+      <v-row class="ma-1">
+        <v-col class="ma-4">
           <h2 class="font-weight-bold">イベント</h2>
-          <p>
+          <p class="mt-3">
             ライブラリ「vue-tinybox」をインストールすると、lightbox
             galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
           </p>
@@ -37,9 +37,9 @@
             aspect-ratio="2"
           ></v-img
         ></v-col>
-        <v-col>
+        <v-col class="ma-4">
           <h2 class="font-weight-bold">LT会</h2>
-          <p>
+          <p class="mt-3">
             ライブラリ「vue-tinybox」をインストールすると、lightbox
             galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
           </p>
