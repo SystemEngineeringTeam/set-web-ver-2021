@@ -10,7 +10,7 @@
           </p>
           <v-img
             src="https://picsum.photos/510/300?random"
-            aspect-ratio="1.7"
+            aspect-ratio="2"
           ></v-img>
         </v-col>
         <v-col>
@@ -21,7 +21,7 @@
           </p>
           <v-img
             src="https://picsum.photos/510/300?random"
-            aspect-ratio="1.7"
+            aspect-ratio="2"
           ></v-img
         ></v-col>
       </v-row>
@@ -34,7 +34,7 @@
           </p>
           <v-img
             src="https://picsum.photos/510/300?random"
-            aspect-ratio="1.7"
+            aspect-ratio="2"
           ></v-img
         ></v-col>
         <v-col>
@@ -45,7 +45,7 @@
           </p>
           <v-img
             src="https://picsum.photos/510/300?random"
-            aspect-ratio="1.7"
+            aspect-ratio="2"
           ></v-img
         ></v-col>
       </v-row>
