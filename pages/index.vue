@@ -3,7 +3,7 @@
     <h1>Home</h1>
     <Top />
     <About />
-    <AboutDet></AboutDet>
+    <AboutDet />
     <Product />
     <News />
     <Question />
