@@ -4,6 +4,7 @@
     <Top />
     <About />
     <Product />
+    <Team />
     <News />
     <Question />
     <Contact />
