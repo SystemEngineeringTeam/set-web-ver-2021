@@ -3,8 +3,12 @@
     <v-carousel cycle height="400" show-arrows-on-hover>
       <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src">
         <v-row class="fill-height" align="center" justify="center">
-          <p class="display-3">{{ slide.text }}</p>
-          <p class="display-3">Slide</p>
+          <ul>
+            <li class="slidetext">{{ slide.text }}</li>
+            <li>
+              <v-btn depressed class="mt-5" color="#059fff"> MORE INFO </v-btn>
+            </li>
+          </ul>
         </v-row>
       </v-carousel-item>
     </v-carousel>
@@ -18,15 +22,15 @@ export default {
       colors: ["#2F2F2F", "#2F2F2F", "#2F2F2F"],
       slides: [
         {
-          text: "ああああ",
+          text: "こんにちは",
           src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
         },
         {
-          text: "あwqwwq",
+          text: "Hello, World!",
           src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
         },
         {
-          text: "ああああああああsasa",
+          text: "人力プロセカで検索",
           src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
         },
       ],
@@ -38,5 +42,12 @@ export default {
 <style scoped>
 .MoreButton {
   margin-top: 40px;
+}
+.slidetext {
+  font-size: 50px;
+}
+li {
+  display: flex;
+  justify-content: center;
 }
 </style>
