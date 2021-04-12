@@ -3,13 +3,11 @@
         <p class="display-4 text-center pb-5">Team Activities</p>
         <v-row>
             <v-col cols="6">
-                <v-card
-                    dark
+                <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
                     width="90%"
-                    height="400"
                 >
-                部室でコーディングしている画像
-                </v-card>
+                </v-img>
             </v-col>
             <v-col cols="6" class="pl-16" align="left">
                 <h2 class="pt-16 display-2" >
@@ -28,13 +26,11 @@
                 </p>
             </v-col>
             <v-col cols="6">
-                <v-card
-                    dark
+                <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
                     width="90%"
-                    height="400"
                 >
-                部室でPCのメモリ抜き差ししてる画像
-                </v-card>
+                </v-img>
             </v-col>
         </v-row>
     </div>
