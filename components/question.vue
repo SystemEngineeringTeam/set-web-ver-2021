@@ -13,7 +13,7 @@
                     <v-divider></v-divider>
 
                     <v-card-text class="anser">
-                        A 年額5,000円
+                        A 年額5,000円です。
                     </v-card-text>
                 </div>
             </v-expand-transition>
@@ -31,7 +31,7 @@
                     <v-divider></v-divider>
 
                     <v-card-text class="anser">
-                        A ４号館別館301号室
+                        A ４号館別館301号室です。
                     </v-card-text>
                 </div>
             </v-expand-transition>
@@ -67,7 +67,7 @@
                 <div v-show="show4">
                     <v-divider></v-divider>
                     <v-card-text class="anser">
-                        A 月曜から金曜まで時間に決まりなく活動しています
+                        A 月曜から金曜まで時間に決まりなく活動しています！
                     </v-card-text>
                 </div>
             </v-expand-transition>
