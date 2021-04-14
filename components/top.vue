@@ -21,10 +21,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
-  height: 100%;
-  color: white;
-  font-size: 30px;
+  width: 30%;
+  font-size: xx-large;
+  color: whitesmoke;
 }
 
 video {
