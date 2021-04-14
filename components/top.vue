@@ -1,20 +1,10 @@
 <template>
-  <div>
-    <div class="video-container">
-      <video
-        src="@/static/toplevel.mp4"
-        autoplay
-        playsinline
-        muted
-        loop
-      ></video>
-      <div class="video-sidebar">
-        <div class="">
-          <div>System</div>
-          <div>Engineering</div>
-          <div>Team</div>
-        </div>
-      </div>
+  <div class="video-container">
+    <video src="@/assets/toplevel.mp4" autoplay playsinline muted loop></video>
+    <div class="video-sidebar">
+      <h1>System</h1>
+      <h1>Engineering</h1>
+      <h1>Team</h1>
     </div>
   </div>
 </template>
@@ -33,6 +23,8 @@
   left: 0;
   width: 40%;
   height: 100%;
+  color: white;
+  font-size: 30px;
 }
 
 video {
