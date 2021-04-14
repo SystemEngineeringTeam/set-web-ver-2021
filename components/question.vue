@@ -1,83 +1,77 @@
 <template>
     <div >
-        <p class="display-4 text-center pb-5">Question</p>
+        <p class="display-4 text-center mb-10">Question</p>
         <v-card
-            class="mx-auto pd-5"
-            max-width="600"
+            class="mx-auto mb-5"
+            max-width="60%"
         >
-            <v-card-actions>
-
-            <v-spacer></v-spacer>
-
-            <v-btn
-                @click="show1 = !show1"
-            >
-                部費はいくらかかりますか？
-            </v-btn>
+            <v-card-actions class="quetion" @click="show1 = !show1">
+                Q 部費はいくらかかりますか？
             </v-card-actions>
-
             <v-expand-transition>
                 <div v-show="show1">
                     <v-divider></v-divider>
 
-                    <v-card-text>
-                        年額5,000円です。
+                    <v-card-text class="anser">
+                        A 年額5,000円
                     </v-card-text>
                 </div>
             </v-expand-transition>
         </v-card>
         <v-card
-            class="mx-auto pd-5"
-            max-width="600"
+            class="mx-auto mb-5"
+            max-width="60%"
         >
-            <v-card-actions>
-
-            <v-spacer></v-spacer>
-
-            <v-btn
-                @click="show2 = !show2"
-            >
-                場所はどこですか？
-            </v-btn>
+            <v-card-actions class="quetion" @click="show2 = !show2">
+                Q 場所はどこですか？
             </v-card-actions>
 
             <v-expand-transition>
                 <div v-show="show2">
                     <v-divider></v-divider>
 
-                    <v-card-text>
-                        ４号館別館301号室
+                    <v-card-text class="anser">
+                        A ４号館別館301号室
                     </v-card-text>
                 </div>
             </v-expand-transition>
         </v-card>
         <v-card
-            class="mx-auto pd-5"
-            max-width="600"
+            class="mx-auto mb-5 "
+            max-width="60%"
         >
-            <v-card-actions>
-
-            <v-spacer></v-spacer>
-
-            <v-btn
-                @click="show3 = !show3"
-            >
-                普段何をしてますか？
-            </v-btn>
+            <v-card-actions class="quetion" @click="show3 = !show3">
+                Q 普段何をしてますか？
             </v-card-actions>
 
             <v-expand-transition>
                 <div v-show="show3">
                     <v-divider></v-divider>
 
-                    <v-card-text>
-                        好きなことをサークルの仲間と
+                    <v-card-text class="anser">
+                        A ゲーム開発、サーバ構築、モデリングなどなど幅広く部員が興味を持ったことをしています。<br/>
+                        　特に何かをやらなければいけないということはありません。
                     </v-card-text>
                 </div>
             </v-expand-transition>
         </v-card>
-        
-        活動時間
+        <v-card
+            class="mx-auto mb-10"
+            max-width="60%"
+        >
+            <v-card-actions class="quetion" @click="show4 = !show4">
+                Q 活動時間は？
+            </v-card-actions>
+
+            <v-expand-transition>
+                <div v-show="show4">
+                    <v-divider></v-divider>
+                    <v-card-text class="anser">
+                        A 月曜から金曜まで時間に決まりなく活動しています
+                    </v-card-text>
+                </div>
+            </v-expand-transition>
+        </v-card>
     </div>
 </template>
 
@@ -87,10 +81,16 @@
       show1: false,
       show2: false,
       show3: false,
+      show4: false,
     }),
   }
 </script>
 
 <style scoped>
-
+.quetion {
+    font-size: 28px;
+}
+.anser {
+    font-size: 24px;
+}
 </style>
