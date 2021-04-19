@@ -2,9 +2,12 @@
   <div class="video-container">
     <video src="@/assets/toplevel.mp4" autoplay playsinline muted loop></video>
     <div class="video-sidebar">
-      <h1>System</h1>
-      <h1>Engineering</h1>
-      <h1>Team</h1>
+      <div>
+        <h1>System</h1>
+        <h1>Engineering</h1>
+        <h1>Team</h1>
+      </div>
+      <v-btn class="btn" depressed color="#4bc0fa"> MORE INFO </v-btn>
     </div>
   </div>
 </template>
@@ -19,11 +22,16 @@
 
 .video-sidebar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 6%;
+  left: 20px;
   width: 30%;
-  font-size: xx-large;
+  font-size: x-large;
   color: whitesmoke;
+}
+
+.btn {
+  top: 3px;
+  color: white;
 }
 
 video {
