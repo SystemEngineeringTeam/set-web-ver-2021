@@ -6,13 +6,14 @@
         <v-row class="ma-1">
             <v-col cols="8">
                 <v-img
-                    src="https://picsum.photos/510/300?random"
+                    v-bind:src="require('@/assets/images/benkyokai.jpg')"
+
                     height="300"
                 ></v-img>
                 <v-card>
                     <h3 class="font-weight-bold">勉強会</h3>
                     <p class="mt-3">
-                        勉強会している様子です
+                        4/28(水)勉強会開催しました。
                     </p>
                 </v-card>
             </v-col>
@@ -25,7 +26,7 @@
                 <v-card>
                     <h3 class="font-weight-bold">ハッカソン</h3>
                     <p class="mt-3">
-                        ハッカソン開催しました
+                        3/15~3/19の5日間でシス研ハッカソン開催しました
                     </p>
                 </v-card>
             </v-col>
@@ -34,42 +35,43 @@
         <v-row class="ma-1">
             <v-col cols="4">
                 <v-img
-                    src="https://picsum.photos/510/300?random"
+                    v-bind:src="require('@/assets/images/takopa.jpg')"
                     aspect-ratio="2"
                 ></v-img
                 >
                 <v-card>
-                    <h3 class="font-weight-bold">BBQ</h3>
+                    <h3 class="font-weight-bold">タコパ</h3>
                     <p class="mt-3">
-                        炎上炎上wwwwww
+                        11/6(土)梶研究室を借りて院生と学部生が仲良くタコパしました
                     </p>
                 </v-card>
             </v-col>
 
             <v-col cols="4">
                 <v-img
-                    src="https://picsum.photos/510/300?random"
+                    v-bind:src="require('@/assets/images/ekiden.jpg')"
                     aspect-ratio="2"
                 ></v-img
                 >
                 <v-card>
                     <h3 class="font-weight-bold">駅伝</h3>
                     <p class="mt-3">
-                        つらい...帰りたい
+                        12/4(土)駅伝大会参加しました
+                        <br>つらい...帰りたい
                     </p>
                 </v-card>
             </v-col>
 
             <v-col cols="4">
                 <v-img
-                    src="https://picsum.photos/510/300?random"
+                    v-bind:src="require('@/assets/images/tako.png')"
                     aspect-ratio="2"
                 ></v-img
                 >
                 <v-card>
                     <h3 class="font-weight-bold">たこ</h3>
                     <p class="mt-3">
-                        たこたこたこたこ
+                        This is a tako
                     </p>
                 </v-card>
             </v-col>
@@ -79,7 +81,13 @@
 </template>
 
 <script>
-
+export default {
+    data(){
+        return {
+            image_src: "@/assets/images/benkyokai.jpg"
+        }
+    }
+}
 </script>
 
 <style scoped>
