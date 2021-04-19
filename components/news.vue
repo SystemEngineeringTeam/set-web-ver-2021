@@ -7,6 +7,7 @@
             <v-col cols="8">
                 <v-img
                     v-bind:src="require('@/assets/images/benkyokai.jpg')"
+
                     height="300"
                 ></v-img>
                 <v-card>
