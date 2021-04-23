@@ -3,20 +3,26 @@
     <v-container>
       <v-row>
         <v-col>
-          <v-btn class="mx-1" dark large color="#00acee">
-            <v-icon dark> mdi-twitter </v-icon>　Twitter
-          </v-btn></v-col
-        >
-        <v-col
-          ><v-btn class="mx-1" dark large color="#00acee">
-            <v-icon dark> mdi-twitter </v-icon>　Twitter
-          </v-btn></v-col
-        >
-        <v-col
-          ><v-btn dark large height="40px" color="white">
+          <v-btn large height="55px" width="230px" elevation="1" color="white">
             <div class="btngit iconsize">
-              <v-icon dark size="30px"> mdi-github</v-icon>
-              　 GitHub
+              <v-icon dark size="40px">mdi-github</v-icon>
+              ㅤTwitter
+            </div>
+          </v-btn></v-col
+        >
+        <v-col
+          ><v-btn large height="55px" width="230px" elevation="1" color="white">
+            <div class="btngit iconsize">
+              <v-icon dark size="40px">mdi-github</v-icon>
+              ㅤGitHub
+            </div>
+          </v-btn></v-col
+        >
+        <v-col
+          ><v-btn large height="55px" width="230px" elevation="1" color="white">
+            <div class="btngit iconsize">
+              <v-icon dark size="40px">mdi-github</v-icon>
+              ㅤBlog
             </div>
           </v-btn></v-col
         >
@@ -31,6 +37,7 @@ export default {};
 
 <style>
 .btngit {
+  float: right;
   color: #000;
 }
 .iconsize {
