@@ -10,6 +10,7 @@
           <v-img
             :src="require('@/assets/images/benkyokai.jpg')"
             aspect-ratio="2"
+            width="60%"
           ></v-img>
         </v-col>
         <v-col class="ma-4">
@@ -20,6 +21,7 @@
           <v-img
             :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
+            width="60%"
           ></v-img
         ></v-col>
       </v-row>
@@ -33,6 +35,7 @@
           <v-img
             :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
+            width="60%"
           ></v-img
         ></v-col>
         <v-col class="ma-4">
@@ -43,6 +46,7 @@
           <v-img
             :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
+            width="60%"
           ></v-img
         ></v-col>
       </v-row>
