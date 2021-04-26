@@ -1,10 +1,8 @@
 <template>
-<div>
-    <br><br>
-    <h1>news story</h1>
-    <v-container>
-        <v-row class="ma-1">
-            <v-col cols="8">
+    <div>
+        <h2 class="mt-12 mb-8">news story</h2>
+        <v-row class="ma-1 justify-center">
+            <v-col cols="4">
                 <v-img
                     v-bind:src="require('@/assets/images/benkyokai.jpg')"
                     height="300"
@@ -17,7 +15,7 @@
                 </v-card>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="2">
                 <v-img
                     src="https://picsum.photos/510/300?random"
                     height="300"
@@ -31,8 +29,8 @@
             </v-col>
         </v-row>
 
-        <v-row class="ma-1">
-            <v-col cols="4">
+        <v-row class="ma-1 justify-center">
+            <v-col cols="2">
                 <v-img
                     v-bind:src="require('@/assets/images/takopa.jpg')"
                     aspect-ratio="2"
@@ -46,7 +44,7 @@
                 </v-card>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="2">
                 <v-img
                     v-bind:src="require('@/assets/images/ekiden.jpg')"
                     aspect-ratio="2"
@@ -61,7 +59,7 @@
                 </v-card>
             </v-col>
 
-            <v-col cols="4">
+            <v-col cols="2">
                 <v-img
                     v-bind:src="require('@/assets/images/tako.png')"
                     aspect-ratio="2"
@@ -75,7 +73,6 @@
                 </v-card>
             </v-col>
         </v-row>
-    </v-container>
     </div>
 </template>
 
@@ -90,8 +87,9 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+h2 {
     text-align:center;
+    font-size:1.75rem;
 }
 
 </style>
