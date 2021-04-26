@@ -5,22 +5,20 @@
         <v-col class="ma-4">
           <h2 class="font-weight-bold">勉強会</h2>
           <p class="mt-3">
-            asaライブラリ「vue-tinybox」をインストールすると、lightbox
-            galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
+            インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。
           </p>
           <v-img
-            src="https://picsum.photos/510/300?random"
+            :src="require('@/assets/images/benkyokai.jpg')"
             aspect-ratio="2"
           ></v-img>
         </v-col>
         <v-col class="ma-4">
           <h2 class="font-weight-bold">ハッカソン</h2>
           <p class="mt-3">
-            ライブラリ「vue-tinybox」をインストールすると、lightbox
-            galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
+            ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。
           </p>
           <v-img
-            src="https://picsum.photos/510/300?random"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
@@ -29,22 +27,21 @@
         <v-col class="ma-4">
           <h2 class="font-weight-bold">イベント</h2>
           <p class="mt-3">
-            ライブラリ「vue-tinybox」をインストールすると、lightbox
-            galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
+            新入生歓迎やBBQなどのイベントや、
+            大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。
           </p>
           <v-img
-            src="https://picsum.photos/510/300?random"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
         <v-col class="ma-4">
-          <h2 class="font-weight-bold">LT会</h2>
+          <h2 class="font-weight-bold">工科展</h2>
           <p class="mt-3">
-            ライブラリ「vue-tinybox」をインストールすると、lightbox
-            galleryの実装が簡単に可能です。ここでは、nuxt.jsでvue-tinyboxを利用するための手順と簡単な使い方を記述してます。
+            大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。
           </p>
           <v-img
-            src="https://picsum.photos/510/300?random"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
