@@ -1,16 +1,16 @@
 <template>
     <div align="center">
         <h2 class="text-center mt-12 mb-12">Team Activities</h2>
-        <v-row>
-            <v-col cols="6">
+        <v-row class="justify-center">
+            <v-col cols="4">
                 <v-img
                     src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
-                    width="50%"
+                    width="80%"
                 >
                 </v-img>
             </v-col>
-            <v-col cols="6" class="pl-16" align="left">
-                <h3 class="pt-16">
+            <v-col cols="4" class="pl-16" align="left">
+                <h3>
                   Creative
                 </h3>
                 <p class="pt-5">
@@ -18,17 +18,17 @@
                 </p>
             </v-col>
         </v-row>
-        <v-row>
-            <v-col cols="6" class="pl-16" align="left">
-                <h3 class="pt-16" >Infrastructure</h3>
+        <v-row class="justify-center">
+            <v-col cols="4" class="pl-16" align="left">
+                <h3>Infrastructure</h3>
                 <p class="pt-5">
                     サークルにラック型サーバを保有しており、ITインフラの勉強を日々しています。
                 </p>
             </v-col>
-            <v-col cols="6">
+            <v-col cols="4">
                 <v-img
                     src="https://cdn.vuetifyjs.com/images/cards/house.jpg"
-                    width="50%"
+                    width="80%"
                 >
                 </v-img>
             </v-col>
