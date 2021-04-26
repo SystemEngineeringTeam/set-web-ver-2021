@@ -8,7 +8,7 @@
             インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。
           </p>
           <v-img
-            v-bind:src="require('@/assets/images/benkyokai.jpg')"
+            :src="require('@/assets/images/benkyokai.jpg')"
             aspect-ratio="2"
           ></v-img>
         </v-col>
@@ -18,7 +18,7 @@
             ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。
           </p>
           <v-img
-            v-bind:src="require('@/assets/images/unnamed.jpg')"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
@@ -31,7 +31,7 @@
             大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。
           </p>
           <v-img
-            v-bind:src="require('@/assets/images/unnamed.jpg')"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
@@ -41,7 +41,7 @@
             大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。
           </p>
           <v-img
-            v-bind:src="require('@/assets/images/unnamed.jpg')"
+            :src="require('@/assets/images/unnamed.jpg')"
             aspect-ratio="2"
           ></v-img
         ></v-col>
