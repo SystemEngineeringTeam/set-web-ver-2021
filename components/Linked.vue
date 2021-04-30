@@ -38,7 +38,7 @@
             height="47px"
             width="200px"
             elevation="1"
-            color="#ffb24d"
+            color="black"
             style="text-transform: none"
           >
             <div class="btnblog iconsize">
