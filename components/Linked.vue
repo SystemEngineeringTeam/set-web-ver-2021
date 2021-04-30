@@ -54,11 +54,10 @@
 
 <script>
 export default {};
+//@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
-
 .btntwitter {
   color: white;
 }
@@ -67,7 +66,6 @@ export default {};
 }
 .btnblog {
   color: white;
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .iconsize {
