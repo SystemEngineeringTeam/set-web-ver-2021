@@ -5,8 +5,8 @@
         <v-col>
           <v-btn
             large
-            height="55px"
-            width="230px"
+            height="47px"
+            width="200px"
             elevation="1"
             color="#1DA1F2"
             style="text-transform: none"
@@ -20,30 +20,30 @@
         <v-col
           ><v-btn
             large
-            height="55px"
-            width="230px"
+            height="47px"
+            width="200px"
             elevation="1"
             color="white"
             style="text-transform: none"
           >
-            <div class="btngit iconsize">
+            <div class="btngithub iconsize">
               <v-icon dark size="40px">mdi-github</v-icon>
-              ㅤGitHub
+              GitHub
             </div>
           </v-btn></v-col
         >
         <v-col
           ><v-btn
             large
-            height="55px"
-            width="230px"
+            height="47px"
+            width="200px"
             elevation="1"
-            color="white"
+            color="#ffb24d"
             style="text-transform: none"
           >
-            <div class="btngit iconsize">
-              <v-icon dark size="40px">mdi-github</v-icon>
-              ㅤBlog
+            <div class="btnblog iconsize">
+              <v-icon dark size="40px">mdi-book-open-blank-variant</v-icon>
+              Blog
             </div>
           </v-btn></v-col
         >
@@ -57,14 +57,19 @@ export default {};
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
 
 .btntwitter {
-  float: right;
   color: white;
-  font-family: "Space Grotesk", "Sawarabi Mincho", serif;
 }
+.btngithub {
+  color: black;
+}
+.btnblog {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .iconsize {
   font-size: 22px;
 }
