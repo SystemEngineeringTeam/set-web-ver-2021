@@ -2,6 +2,7 @@
   <v-card flat tile width="100%" class="text-center">
     <div class="googleform-wrapper">
       <iframe
+        frameborder="0"
         src="https://docs.google.com/forms/d/e/1FAIpQLSclGARLwqkn1fm1Sg0BvcS8HOJsQ8653XEGwWEGx3tvrCfT6g/viewform?embedded=true"
         >読み込んでいます…</iframe
       >
