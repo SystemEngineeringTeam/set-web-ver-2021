@@ -1,6 +1,7 @@
 <template>
   <div>
     <Top />
+    <Linked />
     <About />
     <AboutDet />
     <Product />
@@ -13,7 +14,10 @@
 </template>
 
 <script>
-export default {};
+import Linked from "../components/Linked.vue";
+export default {
+  components: { Linked },
+};
 </script>
 <style scoped>
 </style>
