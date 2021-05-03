@@ -1,20 +1,22 @@
 <template>
-  <div class="pa-0 ma-5">
-    <v-carousel cycle show-arrows-on-hover>
-      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src">
-        <v-row class="fill-height" align="center" justify="center">
-          <ul>
-            <li class="slidetext black">
-              <!-- <font class="white-text">{{ slide.text }}</font> -->
-            </li>
-            <li>
-              <v-btn :href="slide.url" depressed class="mt-5" color="#059fff"> MORE INFO </v-btn>
-            </li>
-          </ul>
-        </v-row>
-      </v-carousel-item>
-    </v-carousel>
-  </div>
+  <v-row  class="pa-0 ma-5 justify-space-around">
+    <v-col cols="8">
+      <v-carousel cycle show-arrows-on-hover>
+        <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.src">
+          <v-row class="fill-height" align="center" justify="center">
+            <ul>
+              <li class="slidetext black">
+                <!-- <font class="white-text">{{ slide.text }}</font> -->
+              </li>
+              <li>
+                <v-btn :href="slide.url" depressed class="mt-5" color="#059fff"> MORE INFO </v-btn>
+              </li>
+            </ul>
+          </v-row>
+        </v-carousel-item>
+      </v-carousel>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
