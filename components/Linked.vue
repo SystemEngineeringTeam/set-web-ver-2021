@@ -1,7 +1,7 @@
 <template>
   <div align="center">
     <v-container>
-      <v-row>
+      <v-row class="mt-4 mb-4">
         <v-col>
           <v-btn
             large

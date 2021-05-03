@@ -1,6 +1,6 @@
 <template>
   <div class="video-container">
-    <video src="@/assets/toplevel.mp4" autoplay playsinline muted loop></video>
+    <video src="@/assets/toplevel2.mp4" autoplay playsinline muted loop></video>
     <div class="video-sidebar">
       <div>
         <h1>System</h1>
@@ -36,5 +36,6 @@
 
 video {
   width: 100%;
+  height: 80%;
 }
 </style>
