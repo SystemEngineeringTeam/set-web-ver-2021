@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="backcolor">
     <Top />
     <Linked />
     <About />
@@ -20,4 +20,7 @@ export default {
 };
 </script>
 <style scoped>
+.backcolor{
+  background:whitesmoke;
+}
 </style>
