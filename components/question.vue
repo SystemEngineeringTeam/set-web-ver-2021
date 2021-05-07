@@ -10,7 +10,7 @@
                 </v-avatar>
                 <div class="ml-5">部費はいくらかかりますか？</div>
                 <v-btn v-show="!hidden" class="right box" color="black" fab dark small end>
-                    <v-icon align-end justify="end"> {{ btnshow1 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
+                    <v-icon align-end justify="end" > {{ btnshow1 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
                 </v-btn>
             </v-card-actions>
             <v-expand-transition>
@@ -83,6 +83,7 @@
         </v-card>
     </v-col>
 </v-row>
+
 </template>
 
 <script>
@@ -119,6 +120,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 @media screen and (min-width: 1200px) {
   h2 {
     text-align: center;
