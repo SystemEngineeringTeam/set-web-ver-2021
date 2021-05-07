@@ -9,8 +9,8 @@
                     <v-icon dark color="white" size="30px">mdi-quora</v-icon>
                 </v-avatar>
                 <div class="ml-5">部費はいくらかかりますか？</div>
-                <v-btn v-show="!hidden" class="right box" color="black" fab dark small end>
-                    <v-icon align-end justify="end" > {{ btnshow1 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
+                <v-btn v-show="!hidden" class="right box" color="black" fab dark small>
+                    <v-icon align-end justify="end"> {{ btnshow1 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
                 </v-btn>
             </v-card-actions>
             <v-expand-transition>
@@ -28,7 +28,7 @@
                 <div class="ml-5">
                     場所はどこですか？
                 </div>
-                <v-btn v-show="!hidden" class="right box" color="black" fab dark small end>
+                <v-btn v-show="!hidden" class="right box" color="black" fab dark small>
                     <v-icon align-end justify="end"> {{ btnshow2 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
                 </v-btn>
             </v-card-actions>
@@ -46,7 +46,7 @@
                     <v-icon dark color="white" size="30px">mdi-quora</v-icon>
                 </v-avatar>
                 <div class="ml-5">普段何をしてますか？</div>
-                <v-btn v-show="!hidden" class="right box " color="black" fab dark small end>
+                <v-btn v-show="!hidden" class="right box" color="black" fab dark small>
                     <v-icon align-end justify="end"> {{ btnshow3 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
                 </v-btn>
             </v-card-actions>
@@ -61,13 +61,13 @@
                 </div>
             </v-expand-transition>
         </v-card>
-        <v-card　outlined class="mx-auto mb-10 cardwidth">
+        <v-card outlined class="mx-auto mb-10 cardwidth">
             <v-card-actions @click="show4 = !show4;toggle4()" style="font-weight: bold">
                 <v-avatar slot="icon" color="black accent-4" size="40">
                     <v-icon dark color="white" size="30px">mdi-quora</v-icon>
                 </v-avatar>
                 <div class="ml-5">活動時間は？</div>
-                <v-btn v-show="!hidden" class="right box " color="black" fab dark small end>
+                <v-btn v-show="!hidden" class="right box" color="black" fab dark small>
                     <v-icon align-end justify="end"> {{ btnshow4 ? 'mdi-minus' : 'mdi-plus' }}</v-icon>
                 </v-btn>
             </v-card-actions>
@@ -75,7 +75,7 @@
                 <div v-show="show4">
                     <v-divider></v-divider>
                     <v-card-text>
-                        月曜から金曜まで時間に決まりなく活動しています！
+                      月曜から金曜まで時間に決まりなく活動しています!
                         </v-btn>
                     </v-card-text>
                 </div>
@@ -83,7 +83,6 @@
         </v-card>
     </v-col>
 </v-row>
-
 </template>
 
 <script>
@@ -123,6 +122,7 @@ export default {
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 @media screen and (min-width: 1200px) {
   h2 {
     text-align: center;
