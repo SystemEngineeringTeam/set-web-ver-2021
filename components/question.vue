@@ -281,7 +281,7 @@ export default {
   }
 
   .cardwidth {
-    max-width: 70%;
+    max-width: 75%;
   }
 }
 </style>
