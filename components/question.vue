@@ -197,7 +197,7 @@ export default {
   }
 
   .cardwidth {
-    max-width: 80%;
+    max-width: 60%;
   }
 }
 
@@ -281,7 +281,7 @@ export default {
   }
 
   .cardwidth {
-    max-width: 80%;
+    max-width: 75%;
   }
 }
 </style>
