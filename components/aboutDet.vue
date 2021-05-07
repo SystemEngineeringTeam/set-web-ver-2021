@@ -1,5 +1,6 @@
 <template>
-    <div id="slide">
+    <transition name="slide">
+      <div v-show="animation">
         <v-row class="justify-center justify-space-around">
           <v-col cols="4">
             <h2 class="font-weight-bold">勉強会</h2>
@@ -49,8 +50,8 @@
             ></v-img
           ></v-col>
         </v-row>
-
-    </div>
+      </div>
+    </transition>
   <!-- <LightBox ref="lightbox" :images="images"></LightBox> -->
 </template>
 
@@ -58,6 +59,9 @@
 export default {
   data() {
     return {
+      scrollY: 0,
+      animation: false,
+      width: 0,
       images: [
         {
           src:"https://pbs.twimg.com/media/Eyhu7l_U8AMylB1?format=jpg&name=medium",
@@ -67,17 +71,39 @@ export default {
       ],
     };
   },
-  // mounted() {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-  // methods: {
-  //   handleScroll() {
-  //     this.scrollY = window.scrollY;
-  //     if(!this.animation){
-  //       this.animation = true
-  //     }
-  //   }
-  // }
+  created(){
+    window.addEventListener('load',this.load)
+  },
+  mounted() {
+    // 要素の幅を取得するメソッド
+    this.getTargetWidth()
+
+    window.addEventListener('load',this.load)
+    window.addEventListener('scroll', this.handleScroll);
+    // ユーザーがウィンドウサイズを変更したら実行されるようにする
+    window.addEventListener('resize', this.getTargetWidth)
+  },
+  methods: {
+      load(){
+        if(this.width < 1800){
+          this.animation = true
+        }
+      },
+      handleScroll() {
+          this.scrollY = window.scrollY;
+          if(this.scrollY >= 10 || this.width > 1600){
+              this.animation = true
+          }
+          // console.log(this.scrollY)
+      },
+      getTargetWidth () {
+          if(this.width > 1500){
+              this.animation = true
+          }
+          this.width = window.innerWidth;
+          console.log(this.width);
+      }
+  }
 };
 </script>
 
@@ -116,41 +142,11 @@ h2 {
 /* } */
 
 @keyframes slide-in {
-        0% {
-            transform: translateY(300px);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-@media screen and (min-width: 1200px) {
-    #slide {
-    /* 現れる時のトランジションの状態 */
-      animation: slide-in 2s;
-    }
-}
-@media screen and (max-width: 320px) {
-    #slide {
-    /* 現れる時のトランジションの状態 */
-      animation: slide-in 2s;
-    }
-}
-@media only screen and (min-width: 321px) and (max-width: 440px) {
-    #slide {
-    /* 現れる時のトランジションの状態 */
-      animation: slide-in 2s;
-    }
-}
-@media only screen and (min-width: 441px) and (max-width: 509px) {
-    #slide {
-    /* 現れる時のトランジションの状態 */
-      animation: slide-in 2s;
-    }
-}
-@media only screen and (min-width: 510px) and (max-width: 1199px) {
-    #slide {
-    /* 現れる時のトランジションの状態 */
-      animation: slide-in 2s;
-    }
+  from{
+    transform: translateY(300px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 </style>
