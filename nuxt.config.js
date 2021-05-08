@@ -39,14 +39,30 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
+    "@nuxtjs/pwa",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    "@nuxtjs/pwa",
   ],
-
+  pwa: {
+    manifest: {
+      name: "愛知工業大学 システム工学研究会",
+      lang: "ja",
+      short_name: "システム工学研究会",
+      title: "愛知工業大学 システム工学研究会",
+      "og:title": "愛知工業大学 システム工学研究会",
+      description:
+        "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
+      "og:description":
+        "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
+      theme_color: "#212121",
+      background_color: "#212121",
+    },
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
