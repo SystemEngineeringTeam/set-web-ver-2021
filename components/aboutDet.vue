@@ -1,4 +1,5 @@
 <template>
+  <div style="height:1000px">
     <transition name="slide">
       <div v-show="animation">
         <v-row class="justify-center justify-space-around">
@@ -52,6 +53,7 @@
         </v-row>
       </div>
     </transition>
+  </div>
   <!-- <LightBox ref="lightbox" :images="images"></LightBox> -->
 </template>
 
