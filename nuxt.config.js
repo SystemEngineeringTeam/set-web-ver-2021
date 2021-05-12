@@ -6,15 +6,55 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - set-web",
-    title: "set-web",
+    titleTemplate: "%s",
+    title: "愛知工業大学 システム工学研究会",
     htmlAttrs: {
-      lang: "en",
+      lang: "ja",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { name: "robots", content: "ALL" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:site", content: "@set_official" },
+      { name: "twitter:creator", content: "@set_official" },
+      {
+        name: "twitter:title",
+        content: "愛知工業大学 システム工学研究会についての情報など",
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "愛知工業大学 システム工学研究会",
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://set1.ie.aitech.ac.jp/",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://set1.ie.aitech.ac.jp/img/set_icon.jpg",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "愛知工業大学 システム工学研究会",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -58,7 +98,7 @@ export default {
       description:
         "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
       "og:description":
-        "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
+        "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など",
       theme_color: "#212121",
       background_color: "#212121",
     },
