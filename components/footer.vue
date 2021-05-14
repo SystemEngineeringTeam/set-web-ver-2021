@@ -10,7 +10,7 @@
       <v-card-text class="pt-0 pb-0">
         <v-btn
           v-for="item in items"
-          :key="item"
+          :key="item.url"
           class="pt-0 mx-6 white--text iconbutton"
           icon
           :href="item.url"
