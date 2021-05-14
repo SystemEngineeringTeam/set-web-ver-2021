@@ -11,10 +11,9 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "core-js": "^3.11.0",
-    "is-svg": ">=4.2.2",
-    "nuxt": "^2.15.3",
-    "postcss": ">=8.2.10"
+    "core-js": "^3.12.1",
+    "is-svg": ">=4.3.1",
+    "nuxt": "^2.15.6"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.3"
