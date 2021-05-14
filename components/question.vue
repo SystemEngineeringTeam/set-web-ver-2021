@@ -5,10 +5,7 @@
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <!-- cardwidthはレスポンシブ対応,widthを占める割合をbreakpointで変えている -->
         <v-card-actions
-          @click="
-            show1 = !show1;
-            toggle1();
-          "
+          @click="show1 = !show1;"
           style="font-weight: bold"
         >
           <v-avatar slot="icon" color="black accent-4" size="40">
@@ -16,7 +13,6 @@
           </v-avatar>
           <div class="ml-5">部費はいくらかかりますか？</div>
           <v-btn
-            v-show="!hidden"
             class="right box"
             color="black"
             fab
@@ -24,7 +20,7 @@
             small
           >
             <v-icon align-end justify="end">
-              {{ btnshow1 ? "mdi-minus" : "mdi-plus" }}</v-icon
+              {{ show1 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
           </v-btn>
         </v-card-actions>
@@ -37,10 +33,7 @@
       </v-card>
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <v-card-actions
-          @click="
-            show2 = !show2;
-            toggle2();
-          "
+          @click="show2 = !show2;"
           style="font-weight: bold"
         >
           <v-avatar slot="icon" color="black accent-4" size="40">
@@ -48,7 +41,6 @@
           </v-avatar>
           <div class="ml-5">場所はどこですか？</div>
           <v-btn
-            v-show="!hidden"
             class="right box"
             color="black"
             fab
@@ -56,7 +48,7 @@
             small
           >
             <v-icon align-end justify="end">
-              {{ btnshow2 ? "mdi-minus" : "mdi-plus" }}</v-icon
+              {{ show2 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
           </v-btn>
         </v-card-actions>
@@ -70,10 +62,7 @@
       </v-card>
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <v-card-actions
-          @click="
-            show3 = !show3;
-            toggle3();
-          "
+          @click="show3 = !show3;"
           style="font-weight: bold"
         >
           <v-avatar slot="icon" color="black accent-4" size="40">
@@ -81,7 +70,6 @@
           </v-avatar>
           <div class="ml-5">普段何をしてますか？</div>
           <v-btn
-            v-show="!hidden"
             class="right box"
             color="black"
             fab
@@ -89,7 +77,7 @@
             small
           >
             <v-icon align-end justify="end">
-              {{ btnshow3 ? "mdi-minus" : "mdi-plus" }}</v-icon
+              {{ show3 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
           </v-btn>
         </v-card-actions>
@@ -106,10 +94,7 @@
       </v-card>
       <v-card outlined class="mx-auto mb-10 cardwidth">
         <v-card-actions
-          @click="
-            show4 = !show4;
-            toggle4();
-          "
+          @click="show4 = !show4;"
           style="font-weight: bold"
         >
           <v-avatar slot="icon" color="black accent-4" size="40">
@@ -117,7 +102,6 @@
           </v-avatar>
           <div class="ml-5">活動時間は？</div>
           <v-btn
-            v-show="!hidden"
             class="right box"
             color="black"
             fab
@@ -125,7 +109,7 @@
             small
           >
             <v-icon align-end justify="end">
-              {{ btnshow4 ? "mdi-minus" : "mdi-plus" }}</v-icon
+              {{ show4 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
           </v-btn>
         </v-card-actions>
@@ -147,28 +131,12 @@ export default {
   data() {
     return {
       show1: false, //cardのオンオフ
-      show2: false,
+      show2: false, //プラスマイナスのiconの状態
       show3: false,
       show4: false,
-      btnshow1: false, //プラスマイナスのiconの状態
-      btnshow2: false,
-      btnshow3: false,
-      btnshow4: false,
     };
   }, //月曜から金曜まで時間に決まりなく活動しています!
   methods: {
-    toggle1() {
-      this.btnshow1 = !this.btnshow1;
-    },
-    toggle2() {
-      this.btnshow2 = !this.btnshow2;
-    },
-    toggle3() {
-      this.btnshow3 = !this.btnshow3;
-    },
-    toggle4() {
-      this.btnshow4 = !this.btnshow4;
-    },
   },
 };
 
