@@ -1,95 +1,47 @@
 <template>
-  <div align="center">
-    <v-container>
-      <v-row class="mt-4 mb-4">
-        <v-col>
-          <a
-            href="https://twitter.com/set_official"
-            style="text-decoration: none"
+  <v-container>
+    <v-row class="pt-4">
+      <div class="tmp">
+        <v-card class="mx-auto" max-width="374">
+          <v-icon dark color="black" class="btngithub" size="100px"
+            >mdi-github</v-icon
           >
-            <v-btn
-              large
-              height="47px"
-              width="200px"
-              elevation="1"
-              color="#1DA1F2"
-              style="text-transform: none"
-            >
-              <div class="btntwitter iconsize">
-                <v-icon dark size="42px">mdi-twitter</v-icon>
-                Twitter
-              </div>
-            </v-btn>
-          </a></v-col
-        >
-        <v-col>
-          <a
-            href="https://github.com/SystemEngineeringTeam"
-            style="text-decoration: none"
-            ><v-btn
-              large
-              height="47px"
-              width="200px"
-              elevation="1"
-              color="white"
-              style="text-transform: none"
-            >
-              <div class="btngithub iconsize">
-                <v-icon dark size="40px">mdi-github</v-icon>
-                GitHub
-              </div>
-            </v-btn></a
-          ></v-col
-        >
-        <v-col>
-          <a
-            href="https://set1.ie.aitech.ac.jp/blog"
-            style="text-decoration: none"
-            ><v-btn
-              large
-              height="47px"
-              width="200px"
-              elevation="1"
-              color="black"
-              style="text-transform: none"
-            >
-              <div class="btnblog iconsize">
-                <v-icon dark size="40px">mdi-book-open-blank-variant</v-icon>
-                Blog
-              </div>
-            </v-btn></a
-          ></v-col
-        >
-      </v-row>
-    </v-container>
-  </div>
+          <v-card-title>Github</v-card-title>
+          <v-card-text>
+            <v-row align="center" class="mx-0"> </v-row>
+            <div>
+              Small plates, salads & sandwiches - an intimate setting with 12
+              indoor seats plus patio seating.
+            </div>
+          </v-card-text>
+        </v-card>
+      </div>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      twitterURL: "https://github.com/hihumikan",
-      githubURL: "https://github.com/hihumikan",
-      blogURL: "https://github.com/hihumikan",
-    };
-  },
-};
-//@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
+export default {};
 </script>
+//@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
 
 <style>
 .btntwitter {
   color: white;
 }
-.btngithub {
-  color: black;
-}
-.btnblog {
-  color: white;
-}
 
-.iconsize {
-  font-size: 22px;
+.btngithub {
+  margin: 0;
+  position: absolute;
+  left: 38%;
+  margin-right: 50%;
+}
+.tmp {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+.tmp:hover {
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 </style>
