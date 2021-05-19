@@ -4,41 +4,110 @@
       <div v-show="animation">
         <v-row class="justify-center">
           <v-col cols="4">
-            <!-- <h2 class="font-weight-bold">勉強会</h2>
-            <p class="mt-3">
-              インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。
-            </p> -->
-            <v-img
-              class="photo"
-              :src="require('@/assets/images/hackathon.jpeg')"
-              aspect-ratio="2"
-            ></v-img>
+            <v-dialog
+              transition="dialog-top-transition"
+              max-width="800"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-img
+                  v-bind="attrs"
+                  v-on="on"
+                  class="photo"
+                  :src="require('@/assets/images/hackathon.jpeg')"
+                  aspect-ratio="2"
+                  ></v-img>
+              </template>
+              <template v-slot:default="dialog">
+                <v-card>
+                  <v-img
+                    :src="require('@/assets/images/hackathon.jpeg')"
+                    aspect-ratio="2"
+                  ></v-img>
+                  <v-card-text>
+                    <h2 class="font-weight-bold pt-12 pb-8">勉強会</h2>
+                    <p>インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。</p>
+                  </v-card-text>
+                  <v-card-actions class="justify-end">
+                    <v-btn
+                      text
+                      @click="dialog.value = false"
+                    >閉じる</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </template>
+            </v-dialog>
           </v-col>
           <v-col cols="4">
-            <!-- <h2 class="font-weight-bold">ハッカソン</h2>
-            <p class="mt-3">
-              ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。
-            </p> -->
-            <v-img
-              class = "photo"
-              :src="require('@/assets/images/unnamed.jpg')"
-              aspect-ratio="2"
-            ></v-img>
+            <v-dialog
+              transition="dialog-top-transition"
+              max-width="800"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-img
+                  v-bind="attrs"
+                  v-on="on"
+                  class = "photo"
+                  :src="require('@/assets/images/unnamed.jpg')"
+                  aspect-ratio="2"
+                ></v-img>
+              </template>
+              <template v-slot:default="dialog">
+                <v-card>
+                  <v-img
+                    :src="require('@/assets/images/unnamed.jpg')"
+                    aspect-ratio="2"
+                  ></v-img>
+                  <v-card-text>
+                    <h2 class="font-weight-bold pt-12 pb-8">ハッカソン</h2>
+                    <p>ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。</p>
+                  </v-card-text>
+                  <v-card-actions class="justify-end">
+                    <v-btn
+                      text
+                      @click="dialog.value = false"
+                    >閉じる</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </template>
+            </v-dialog>
           </v-col>
         </v-row>
         <v-row class="justify-center">
           <v-col cols="4">
-            <!-- <h2 class="font-weight-bold">イベント</h2>
-            <p class="mt-3">
-              新入生歓迎やBBQなどのイベントや、
-              大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。
-            </p> -->
-            <v-img
-              class = "photo"
-              :src="require('@/assets/images/unnamed.jpg')"
-              aspect-ratio="2"
-            ></v-img
-          ></v-col>
+            <v-dialog
+              transition="dialog-bottom-transition"
+              max-width="800"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-img
+                  v-bind="attrs"
+                  v-on="on"
+                  class = "photo"
+                  :src="require('@/assets/images/takopa.jpg')"
+                  aspect-ratio="2"
+                ></v-img>
+              </template>
+              <template v-slot:default="dialog">
+                <v-card>
+                  <v-img
+                    :src="require('@/assets/images/takopa.jpg')"
+                    aspect-ratio="2"
+                  ></v-img>
+                  <v-card-text>
+                    <h2 class="font-weight-bold pt-12 pb-8">イベント</h2>
+                    <p>新入生歓迎やBBQなどのイベントや、
+              大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。</p>
+                  </v-card-text>
+                  <v-card-actions class="justify-end">
+                    <v-btn
+                      text
+                      @click="dialog.value = false"
+                    >閉じる</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </template>
+            </v-dialog>
+          </v-col>
           <v-col cols="4">
             <!-- <h2 class="font-weight-bold">工科展</h2>
             <p class="mt-3">
@@ -118,6 +187,7 @@ export default {
   border-radius: 5px;
   transition: opacity .4s ease-in-out;
 }
+
 
 /* .v-img{
   transition: opacity .4s ease-in-out;
