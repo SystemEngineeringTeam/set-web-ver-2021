@@ -72,8 +72,7 @@ h2 {
   animation: slide-in 2s;
 }
 .tmp {
-  background-color: #2f2f2f;
-  color: white;
+  color: black;
 }
 @keyframes slide-in {
   from {
