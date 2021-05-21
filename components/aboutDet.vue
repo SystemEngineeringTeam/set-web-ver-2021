@@ -109,16 +109,39 @@
             </v-dialog>
           </v-col>
           <v-col cols="4">
-            <!-- <h2 class="font-weight-bold">工科展</h2>
-            <p class="mt-3">
-              大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。
-            </p> -->
-            <v-img
-              class = "photo"
-              :src="require('@/assets/images/unnamed.jpg')"
-              aspect-ratio="2"
-            ></v-img
-          ></v-col>
+            <v-dialog
+              transition="dialog-bottom-transition"
+              max-width="800"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-img
+                  v-bind="attrs"
+                  v-on="on"
+                  class = "photo"
+                  :src="require('@/assets/images/presen.jpg')"
+                  aspect-ratio="2"
+                ></v-img>
+              </template>
+              <template v-slot:default="dialog">
+                <v-card>
+                  <v-img
+                    :src="require('@/assets/images/presen.jpg')"
+                    aspect-ratio="2"
+                  ></v-img>
+                  <v-card-text>
+                    <h2 class="font-weight-bold pt-12 pb-8">工科展</h2>
+                    <p>大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。</p>
+                  </v-card-text>
+                  <v-card-actions class="justify-end">
+                    <v-btn
+                      text
+                      @click="dialog.value = false"
+                    >閉じる</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </template>
+            </v-dialog>
+          </v-col>
         </v-row>
       </div>
     <!-- </transition> -->
