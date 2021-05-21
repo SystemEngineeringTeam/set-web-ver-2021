@@ -1,70 +1,54 @@
 <template>
   <div class="video-container">
+    <!--
     <video src="@/assets/toplevel2.mp4" autoplay playsinline muted loop></video>
-    <div class="video-sidebar">
-      <h1>System</h1>
-      <h1>Engineering</h1>
-      <h1>Team</h1>
+    -->
+    <div class="filter">
+      <img src="@/assets/images/topimage.png" class="filter-img" />
+    </div>
+    <div class="video-sidebar font-weight-bold">
+      <h1>System Engineering Team</h1>
+      <p class="comment">
+        　　　　　　We're a club in Aichi Institute of Technology
+      </p>
     </div>
   </div>
 </template>
 
 <script>
+export default {};
 </script>
 
 <style scoped>
-@media screen and (min-width: 1900px) {
-  .video-sidebar {
-    font-size: 46px;
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 1899px) {
-  .video-sidebar {
-    font-size: 34px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .video-sidebar {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .video-sidebar {
-    font-size: 8px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 440px) {
-  .video-sidebar {
-    font-size: 9px;
-  }
-}
-@media only screen and (min-width: 441px) and (max-width: 509px) {
-  .video-sidebar {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 510px) and (max-width: 750px) {
-  .video-sidebar {
-    font-size: 17px;
-  }
-}
-@media only screen and (min-width: 751px) and (max-width: 1199px) {
-  .video-sidebar {
-    font-size: 23px;
-  }
-}
 .video-container {
   position: relative;
 }
 .video-sidebar {
   position: absolute;
-  top: 10%;
-  left: 20px;
+  top: 30%;
+  left: 17%;
+  color: white;
+  margin: auto;
+  opacity: 1;
+  font-weight: 900;
+  font-size: 2.375vw;
+  font-family: Montserrat;
+}
+.comment {
+  font-weight: lighter;
   color: whitesmoke;
+  opacity: 0.9;
+  margin-top: 12px;
+  font-size: 2vw;
 }
 
-video {
+.filter {
+  background: #000;
+}
+
+.filter-img {
+  display: block;
+  opacity: 0.22;
   width: 100%;
-  height: 80%;
 }
 </style>

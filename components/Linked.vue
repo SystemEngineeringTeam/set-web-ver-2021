@@ -1,7 +1,7 @@
 <template>
-  <div align="center">
+  <div align="center" class="all">
     <v-container>
-      <v-row class="mt-4 mb-4">
+      <v-row>
         <v-col>
           <a
             href="https://twitter.com/set_official"
@@ -9,7 +9,7 @@
           >
             <v-btn
               large
-              height="47px"
+              height="62px"
               width="200px"
               elevation="1"
               color="#1DA1F2"
@@ -28,7 +28,7 @@
             style="text-decoration: none"
             ><v-btn
               large
-              height="47px"
+              height="62px"
               width="200px"
               elevation="1"
               color="white"
@@ -47,7 +47,7 @@
             style="text-decoration: none"
             ><v-btn
               large
-              height="47px"
+              height="62px"
               width="200px"
               elevation="1"
               color="black"
@@ -91,5 +91,8 @@ export default {
 
 .iconsize {
   font-size: 22px;
+}
+.all {
+  font-family: Montserrat;
 }
 </style>
