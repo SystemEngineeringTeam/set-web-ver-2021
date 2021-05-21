@@ -1,7 +1,7 @@
 <template>
   <div class="aboutHeight">
     <!-- <transition name="slide"> -->
-      <div v-show="animation">
+      <!-- <div v-show="animation"> -->
         <v-row class="justify-center">
           <v-col cols="4">
             <v-dialog
@@ -9,13 +9,16 @@
               max-width="800"
             >
               <template v-slot:activator="{ on, attrs }">
-                <v-img
-                  v-bind="attrs"
-                  v-on="on"
-                  class="photo"
-                  :src="require('@/assets/images/hackathon.jpeg')"
-                  aspect-ratio="2"
+                <div class="ImgBox">
+                  <v-img
+                    v-bind="attrs"
+                    v-on="on"
+                    class="photo"
+                    :src="require('@/assets/images/hackathon.jpeg')"
+                    aspect-ratio="2"
                   ></v-img>
+                  <p class="title">勉強会</p>
+                </div>
               </template>
               <template v-slot:default="dialog">
                 <v-card>
@@ -38,6 +41,7 @@
             </v-dialog>
           </v-col>
           <v-col cols="4">
+            <div class="ImgBox">
             <v-dialog
               transition="dialog-top-transition"
               max-width="800"
@@ -47,14 +51,14 @@
                   v-bind="attrs"
                   v-on="on"
                   class = "photo"
-                  :src="require('@/assets/images/unnamed.jpg')"
+                  :src="require('@/assets/images/benkyo.jpg')"
                   aspect-ratio="2"
                 ></v-img>
               </template>
               <template v-slot:default="dialog">
                 <v-card>
                   <v-img
-                    :src="require('@/assets/images/unnamed.jpg')"
+                    :src="require('@/assets/images/benkyo.jpg')"
                     aspect-ratio="2"
                   ></v-img>
                   <v-card-text>
@@ -70,10 +74,13 @@
                 </v-card>
               </template>
             </v-dialog>
+            <p class="title">ハッカソン</p>
+            </div>
           </v-col>
         </v-row>
         <v-row class="justify-center">
           <v-col cols="4">
+            <div class="ImgBox">
             <v-dialog
               transition="dialog-bottom-transition"
               max-width="800"
@@ -107,8 +114,11 @@
                 </v-card>
               </template>
             </v-dialog>
+            <p class="title">イベント</p>
+            </div>
           </v-col>
           <v-col cols="4">
+            <div class="ImgBox">
             <v-dialog
               transition="dialog-bottom-transition"
               max-width="800"
@@ -141,9 +151,11 @@
                 </v-card>
               </template>
             </v-dialog>
+            <p class="title">工科展</p>
+            </div>
           </v-col>
         </v-row>
-      </div>
+      <!-- </div> -->
     <!-- </transition> -->
   </div>
   <!-- <LightBox ref="lightbox" :images="images"></LightBox> -->
@@ -166,52 +178,68 @@ export default {
     };
   },
   created(){
-    window.addEventListener('load',this.load)
+    // window.addEventListener('load',this.load)
   },
   mounted() {
-    // 要素の幅を取得するメソッド
-    this.getTargetWidth()
+    // // 要素の幅を取得するメソッド
+    // this.getTargetWidth()
 
-    window.addEventListener('load',this.load)
-    window.addEventListener('scroll', this.handleScroll);
-    // ユーザーがウィンドウサイズを変更したら実行されるようにする
-    window.addEventListener('resize', this.getTargetWidth)
+    // window.addEventListener('load',this.load)
+    // window.addEventListener('scroll', this.handleScroll);
+    // // ユーザーがウィンドウサイズを変更したら実行されるようにする
+    // window.addEventListener('resize', this.getTargetWidth)
   },
   methods: {
-      load(){
-        if(this.width < 1800){
-          this.animation = true
-        }
-      },
-      handleScroll() {
-          this.scrollY = window.scrollY;
-          if(this.scrollY >= 10 || this.width > 1600){
-              this.animation = true
-          }
-      },
-      getTargetWidth () {
-          if(this.width > 1500){
-              this.animation = true
-          }
-          this.width = window.innerWidth;
-      }
+      // load(){
+      //   if(this.width < 1800){
+      //     this.animation = true
+      //   }
+      // },
+      // handleScroll() {
+      //     this.scrollY = window.scrollY;
+      //     if(this.scrollY >= 10 || this.width > 1600){
+      //         this.animation = true
+      //     }
+      // },
+      // getTargetWidth () {
+      //     if(this.width > 1500){
+      //         this.animation = true
+      //     }
+      //     this.width = window.innerWidth;
+      // }
   }
 };
 </script>
 
-<style>
+<style scoped>
 .photo:hover{
   filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
   border-radius: 5px;
-  opacity: 0.6;
+  opacity: 1.0;
+  transform: scale(1.2);
+  transition-duration: 0.3s;
 }
 .photo{
   filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
   border-radius: 5px;
-  transition: opacity .4s ease-in-out;
+  opacity: 0.6;
+  transition-duration: 0.3s;
 }
-
-
+.ImgBox{
+  /* filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6)); */
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+}
+.title{
+  position: absolute;
+  top:calc(50% - 25px);
+  left:calc(46% - 25px);
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+}
 /* .v-img{
   transition: opacity .4s ease-in-out;
 }
@@ -228,10 +256,10 @@ h2 {
   /* 現れた時の最初の状態 */
   /* opacity: 0; */
 /* } */
-.slide-enter-active {
-  /* 現れる時のトランジションの状態 */
+/* .slide-enter-active {
+  現れる時のトランジションの状態
   animation: slide-in 2s;
-}
+} */
 /* .slide-enter-to { */
   /* 現れた時の最後の状態 */
   /* opacity: 1; */
@@ -249,7 +277,7 @@ h2 {
 
 /* } */
 
-@keyframes slide-in {
+/* @keyframes slide-in {
   from{
     transform: translateY(300px);
   }
@@ -260,7 +288,7 @@ h2 {
 
 /* レスポンシブ対応 */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .aboutHeight {
     height:1100px;
   }
@@ -285,5 +313,5 @@ h2 {
   .aboutHeight {
     height:900px;
   }
-}
+} */
 </style>
