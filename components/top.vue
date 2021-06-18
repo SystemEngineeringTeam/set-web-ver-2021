@@ -48,7 +48,7 @@ export default {};
 
 .filter-img {
   display: block;
-  opacity: 0.22;
+  opacity: 0.32;
   width: 100%;
 }
 </style>
