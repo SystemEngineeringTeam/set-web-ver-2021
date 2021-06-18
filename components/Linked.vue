@@ -106,6 +106,7 @@ export default {
     width: 16em;
   }
 }
+
 @media only screen and (min-width: 689px) and (max-width: 829px) {
   .buttonline {
     width: 13em;
