@@ -9,10 +9,10 @@
           >
             <v-btn
               large
-              height="62px"
-              width="16em"
               elevation="1"
               color="#1DA1F2"
+              height="60px"
+              class="buttonline"
               style="text-transform: none"
             >
               <div class="btntwitter iconsize">
@@ -29,10 +29,10 @@
           >
             <v-btn
               large
-              height="62px"
-              width="16em"
               elevation="1"
               color="white"
+              height="60px"
+              class="buttonline"
               style="text-transform: none"
             >
               <div class="btngithub iconsize">
@@ -49,10 +49,10 @@
           >
             <v-btn
               large
-              height="62px"
-              width="16em"
               elevation="1"
+              height="60px"
               color="black"
+              class="buttonline"
               style="text-transform: none"
             >
               <div class="btnblog iconsize">
@@ -100,8 +100,20 @@ export default {
 .all {
   font-family: Montserrat;
 }
-.buttonline {
-  border: dashed red;
-}
 
+@media screen and (min-width: 830px) {
+  .buttonline {
+    width: 16em;
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 829px) {
+  .buttonline {
+    width: 13em;
+  }
+}
+@media only screen and (min-width: 369px) and (max-width: 688px) {
+  .buttonline {
+    width: 10em;
+  }
+}
 </style>
