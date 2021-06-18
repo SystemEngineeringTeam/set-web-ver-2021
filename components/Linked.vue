@@ -1,6 +1,6 @@
 <template>
   <div align="center" class="all">
-    <v-container>
+    <v-container style="position: relative; top: -38px">
       <v-row>
         <v-col>
           <a
@@ -10,7 +10,7 @@
             <v-btn
               large
               height="62px"
-              width="200px"
+              width="16em"
               elevation="1"
               color="#1DA1F2"
               style="text-transform: none"
@@ -26,10 +26,11 @@
           <a
             href="https://github.com/SystemEngineeringTeam"
             style="text-decoration: none"
-            ><v-btn
+          >
+            <v-btn
               large
               height="62px"
-              width="200px"
+              width="16em"
               elevation="1"
               color="white"
               style="text-transform: none"
@@ -38,17 +39,18 @@
                 <v-icon dark size="40px">mdi-github</v-icon>
                 GitHub
               </div>
-            </v-btn></a
-          ></v-col
+            </v-btn>
+          </a></v-col
         >
         <v-col>
           <a
             href="https://set1.ie.aitech.ac.jp/blog"
             style="text-decoration: none"
-            ><v-btn
+          >
+            <v-btn
               large
               height="62px"
-              width="200px"
+              width="16em"
               elevation="1"
               color="black"
               style="text-transform: none"
@@ -57,8 +59,8 @@
                 <v-icon dark size="40px">mdi-book-open-blank-variant</v-icon>
                 Blog
               </div>
-            </v-btn></a
-          ></v-col
+            </v-btn>
+          </a></v-col
         >
       </v-row>
     </v-container>
@@ -82,9 +84,11 @@ export default {
 .btntwitter {
   color: white;
 }
+
 .btngithub {
   color: black;
 }
+
 .btnblog {
   color: white;
 }
@@ -92,7 +96,12 @@ export default {
 .iconsize {
   font-size: 22px;
 }
+
 .all {
   font-family: Montserrat;
 }
+.buttonline {
+  border: dashed red;
+}
+
 </style>
