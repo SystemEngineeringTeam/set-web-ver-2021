@@ -2,8 +2,8 @@
   <div style="height: 200px" class="tmp mb-10">
     <transition name="slide">
       <div v-show="animation" class="mt-6">
-        <h2 class="mb-8">About</h2>
-        <p class="mb-8">
+        <h2 class="mb-8 test">A Few Words About Us</h2>
+        <p class="mb-8 pt-7">
           システムシステム工学研究会は愛知工業大学公認の情報系サークルです。
           <br />「多彩な学生が交流を通じて成長する」をモットーに活動しています。
         </p>
@@ -81,5 +81,26 @@ h2 {
   to {
     transform: translateY(0);
   }
+}
+.test {
+  position: relative;
+  bottom: 0px;
+  top: 10px;
+}
+.test:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+* {
+  font-family: Montserrat;
 }
 </style>
