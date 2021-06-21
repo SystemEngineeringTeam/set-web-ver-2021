@@ -11,7 +11,7 @@
               large
               elevation="1"
               color="#1DA1F2"
-              height="60px"
+              height="3.2rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -31,7 +31,7 @@
               large
               elevation="1"
               color="white"
-              height="60px"
+              height="3.2rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -50,8 +50,8 @@
             <v-btn
               large
               elevation="1"
-              height="60px"
               color="black"
+              height="3.2rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -112,9 +112,33 @@ export default {
     width: 13em;
   }
 }
-@media only screen and (min-width: 369px) and (max-width: 688px) {
+@media only screen and (min-width: 545px) and (max-width: 688px) {
   .buttonline {
     width: 10em;
+  }
+}
+@media only screen and (min-width: 417px) and (max-width: 544px) {
+  .buttonline {
+    top: 49px;
+    width: 22rem;
+  }
+}
+@media only screen and (min-width: 309px) and (max-width: 416px) {
+  .buttonline {
+    top: 49px;
+    width: 16rem;
+  }
+}
+@media only screen and (min-width: 20px) and (max-width: 309px) {
+  .buttonline {
+    top: 49px;
+    width: 12rem;
+  }
+}
+@media only screen and (min-width: 20px) and (max-width: 241px) {
+  .buttonline {
+    top: 49px;
+    width: 10rem;
   }
 }
 </style>
