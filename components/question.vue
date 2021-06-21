@@ -4,21 +4,12 @@
       <h2 class="text-center mb-8">Question</h2>
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <!-- cardwidthはレスポンシブ対応,widthを占める割合をbreakpointで変えている -->
-        <v-card-actions
-          @click="show1 = !show1;"
-          style="font-weight: bold"
-        >
+        <v-card-actions @click="show1 = !show1" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
             <v-icon dark color="white" size="30px">mdi-quora</v-icon>
           </v-avatar>
           <div class="ml-5">部費はいくらかかりますか？</div>
-          <v-btn
-            class="right box"
-            color="black"
-            fab
-            dark
-            small
-          >
+          <v-btn class="right box" color="black" fab dark small>
             <v-icon align-end justify="end">
               {{ show1 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
@@ -32,21 +23,12 @@
         </v-expand-transition>
       </v-card>
       <v-card outlined class="mx-auto mb-5 cardwidth">
-        <v-card-actions
-          @click="show2 = !show2;"
-          style="font-weight: bold"
-        >
+        <v-card-actions @click="show2 = !show2" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
             <v-icon dark color="white" size="30px">mdi-quora</v-icon>
           </v-avatar>
           <div class="ml-5">場所はどこですか？</div>
-          <v-btn
-            class="right box"
-            color="black"
-            fab
-            dark
-            small
-          >
+          <v-btn class="right box" color="black" fab dark small>
             <v-icon align-end justify="end">
               {{ show2 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
@@ -61,21 +43,12 @@
         </v-expand-transition>
       </v-card>
       <v-card outlined class="mx-auto mb-5 cardwidth">
-        <v-card-actions
-          @click="show3 = !show3;"
-          style="font-weight: bold"
-        >
+        <v-card-actions @click="show3 = !show3" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
             <v-icon dark color="white" size="30px">mdi-quora</v-icon>
           </v-avatar>
           <div class="ml-5">普段何をしてますか？</div>
-          <v-btn
-            class="right box"
-            color="black"
-            fab
-            dark
-            small
-          >
+          <v-btn class="right box" color="black" fab dark small>
             <v-icon align-end justify="end">
               {{ show3 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
@@ -93,21 +66,12 @@
         </v-expand-transition>
       </v-card>
       <v-card outlined class="mx-auto mb-10 cardwidth">
-        <v-card-actions
-          @click="show4 = !show4;"
-          style="font-weight: bold"
-        >
+        <v-card-actions @click="show4 = !show4" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
             <v-icon dark color="white" size="30px">mdi-quora</v-icon>
           </v-avatar>
           <div class="ml-5">活動時間は？</div>
-          <v-btn
-            class="right box"
-            color="black"
-            fab
-            dark
-            small
-          >
+          <v-btn class="right box" color="black" fab dark small>
             <v-icon align-end justify="end">
               {{ show4 ? "mdi-minus" : "mdi-plus" }}</v-icon
             >
@@ -136,8 +100,7 @@ export default {
       show4: false,
     };
   }, //月曜から金曜まで時間に決まりなく活動しています!
-  methods: {
-  },
+  methods: {},
 };
 
 //
