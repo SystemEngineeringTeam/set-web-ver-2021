@@ -13,3 +13,11 @@ export default {
   },
 };
 </script>
+<style>
+.slide-group > .v-slide-group__next {
+  display: none;
+}
+.slide-group > .v-slide-group__prev {
+  display: none;
+}
+</style>
