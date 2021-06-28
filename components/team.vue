@@ -88,6 +88,4 @@
 .web {
   filter: drop-shadow(2px 2px 2px #aaa);
 }
-
-/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 </style>
