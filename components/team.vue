@@ -73,28 +73,21 @@
 
 .pc {
   max-width: 75%;
-  display: block !important;
 }
 .sp {
   max-width: 100%;
-  display: none !important;
 }
 .images {
   height: 90%;
   width: 90%;
 }
 
-.server {
-}
 .font {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .web {
   filter: drop-shadow(2px 2px 2px #aaa);
 }
-@media screen and (min-width: 910px) {
-  .images {
-  }
-}
+
 /* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
 </style>
