@@ -20,7 +20,7 @@ export default {
 };
 </script>
 <style scoped>
-.backcolor{
-  background:whitesmoke;
+.backcolor {
+  background: whitesmoke;
 }
 </style>
