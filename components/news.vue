@@ -9,12 +9,13 @@
                         class="photo"
                         v-bind:src="item.srcimg"
                     ></v-img>
-                    <v-card class="upcard" height="15vh">
+                    <v-card class="upcard rounded-card" height="15vh">
                         <v-card-text class="black--text pt-1 firstNews font-weight-light">
-                            <p class="newstopic">{{item.topic}}</p>
+                            <p class="newstopic mt-3">{{item.topic}}</p>
                             <p class="mt-3">
                                 {{ item.contents }}
                             </p>
+                            <p class="newsdate mt-3">{{item.date}}</p>
                         </v-card-text>
                     </v-card>
                 </template>
@@ -31,35 +32,43 @@ export default {
                 {
                     srcimg:require('@/assets/images/benkyokai.jpg'),
                     topic:"勉強会",
-                    contents:"4/28(水)勉強会開催しました",
+                    date:"2021/4/28(水)",
+                    contents:"4/28(水)勉強会開催しました。勉強会には１年生の生徒が多く参加してくれて、Pythonを学ぶことができました。",
                     cols:6,
                 },
                 {
                     srcimg:require('@/assets/images/benkyokai.jpg'),
                     topic:"シス研ハッカソン",
+                    date:"2021/3/15~3/19",
                     contents:"3/15~3/19の5日間でシス研ハッカソン開催しました",
                     cols:3,
                 },
-                {                  
+                {
                     cols:'auto',
                 },
                 {
                     srcimg:require('@/assets/images/takopa.jpg'),
                     topic:"タコパ",
+                    date:"2020/11/6(土)",
                     contents:"11/6(土)梶研究室を借りて院生と学部生が仲良くタコパしました",
                     cols:3,
                 },
                 {
                     srcimg:require('@/assets/images/ekiden.jpg'),
                     topic:"駅伝",
+                    date:"2020/12/4(土)",
                     contents:"12/4(土)駅伝大会参加しました。つらい...帰りたい",
                     cols:3,
                 },
                 {
                     srcimg:require('@/assets/images/benkyokai.jpg'),
                     topic:"たこ",
+                    date:"xxxx/xx/xx(x)",
                     contents:"This is a tako",
                     cols:3,
+                },
+                {
+                    cols:'auto',
                 },
             ],
             image_src: "@/assets/images/benkyokai.jpg"
@@ -83,5 +92,30 @@ export default {
 }
 .col-auto{
     visibility: hidden;
+}
+.rounded-card{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.v-card {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.v-card__text {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.newstopic{
+    font-weight: bold;
+    font-size:130%;
+}
+
+.newsdate{
+    font-weight: bold;
+    font-size:90%;
+    color:gray;
+    text-align: right;
 }
 </style>
