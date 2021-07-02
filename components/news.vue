@@ -104,9 +104,13 @@ export default {
 
 .v-card__text {
     flex-grow: 1;
-    overflow: auto;
+    overflow: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;
 }
-
+.v-card__text::-webkit-scrollbar {
+    display:none;
+}
 .newstopic{
     font-weight: bold;
     font-size:130%;
