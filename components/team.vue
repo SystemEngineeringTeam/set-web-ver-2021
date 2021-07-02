@@ -7,7 +7,7 @@
           order="2"
           order-md="1"
           cols="12"
-          sm="9"
+          sm="11"
           md="6"
           lg="6"
           xl="6"
@@ -22,12 +22,12 @@
           </v-card>
         </v-col>
 
-        <v-col order="1" order-md="2" cols="12" sm="8" md="6" lg="6" xl="6"
+        <v-col order="1" order-md="2" cols="12" sm="11" md="6" lg="6" xl="6"
           ><center class="pt-15">
-            <p style="font-size: 2vw; font-weight: bold">Creative</p>
+            <p style="font-size: 30px; font-weight: bold">Creative</p>
             <div class="px-11">
-              <p class="pt-7" style="font-size: 1.3vw; font-weight: 500">
-                クリエイティブ班では、CGやWebアプリケーション、Live2DやUnityなど、主にものづくりを主軸とした。
+              <p class="pt-7" style="font-size: 20px; font-weight: 500">
+                クリエイティブ班では、CGやWebアプリケーション、Live2DやUnityなど、主にものづくりを中心とした活動を行っています！
               </p>
             </div>
           </center>
@@ -35,17 +35,17 @@
       </v-row>
 
       <v-row class="pt-14">
-        <v-col cols="12" sm="8" md="6" lg="6" xl="6"
+        <v-col cols="12" sm="11" md="6" lg="6" xl="6"
           ><center class="pt-15">
-            <p style="font-size: 2vw; font-weight: bold">Infrastructure</p>
+            <p style="font-size: 30px; font-weight: bold">Infrastructure</p>
             <div class="px-11">
-              <p class="pt-7" style="font-size: 1.3vw; font-weight: 500">
+              <p class="pt-7" style="font-size: 18px; font-weight: 500">
                 インフラ班では、主に、シス件に置いてあるサーバーの管理を行い、設計や構築、保守点検などを行います！
               </p>
             </div>
           </center></v-col
         >
-        <v-col cols="12" sm="10" md="6" lg="6" xl="6" class="pr-7 images">
+        <v-col cols="12" sm="11" md="6" lg="6" xl="6" class="pr-7 images">
           <v-card elevation="0">
             <img
               class="pc server web"
