@@ -6,7 +6,7 @@
         <!-- cardwidthはレスポンシブ対応,widthを占める割合をbreakpointで変えている -->
         <v-card-actions @click="show1 = !show1" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
-            <v-icon dark color="white" size="30px">mdi-quora</v-icon>
+            <v-icon dark color="white" class="pr-1" size="24px">Q</v-icon>
           </v-avatar>
           <div class="ml-5">部費はいくらかかりますか？</div>
           <v-btn class="right box" color="black" fab dark small>
@@ -25,7 +25,7 @@
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <v-card-actions @click="show2 = !show2" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
-            <v-icon dark color="white" size="30px">mdi-quora</v-icon>
+            <v-icon dark color="white" class="pr-1" size="24px">Q</v-icon>
           </v-avatar>
           <div class="ml-5">場所はどこですか？</div>
           <v-btn class="right box" color="black" fab dark small>
@@ -45,7 +45,7 @@
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <v-card-actions @click="show3 = !show3" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
-            <v-icon dark color="white" size="30px">mdi-quora</v-icon>
+            <v-icon dark color="white" class="pr-1" size="24px">Q</v-icon>
           </v-avatar>
           <div class="ml-5">普段何をしてますか？</div>
           <v-btn class="right box" color="black" fab dark small>
@@ -68,7 +68,7 @@
       <v-card outlined class="mx-auto mb-10 cardwidth">
         <v-card-actions @click="show4 = !show4" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
-            <v-icon dark color="white" size="30px">mdi-quora</v-icon>
+            <v-icon dark color="white" class="pr-1" size="24px">Q</v-icon>
           </v-avatar>
           <div class="ml-5">活動時間は？</div>
           <v-btn class="right box" color="black" fab dark small>
