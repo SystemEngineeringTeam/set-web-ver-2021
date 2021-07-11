@@ -1,18 +1,22 @@
 <template>
   <v-row  class="pa-0 ma-5 justify-space-around">
-    <v-col cols="10">
+    <v-col cols="12">
       <h2 class="text-center pb-8">Products</h2>
+    </v-col>
+    <v-col cols="2">
+    </v-col>
+    <v-col cols="8">
       <div class="slide-group-wrap">
         <v-sheet class="backcolor">
           <v-slide-group class="slide-group" center-active show-arrows>
             <v-slide-item v-for="(slide,i) in slides" :key="i">
-              <v-card v-if="i==selectItem" :href="slide.url" style="margin: 0 20px 0 0; width: 850px; height:500px;">
-                <v-img class="white--text align-end" height="300px" :src="slide.src" />
+              <v-card v-if="i==selectItem" :href="slide.url" class="select">
+                <v-img class="white--text align-end" height="60%" :src="slide.src" />
                 <v-card-title>{{ slide.text }}</v-card-title>
               </v-card>
-              <v-card v-else class="not-select" style="margin: 60px 20px 0 0; width: 320px; height:300px;">
-                <v-img class="white--text align-end" height="120px" :src="slide.src" />
-                <v-card-title>{{ slide.text }}</v-card-title>
+              <v-card v-else class="not-select" >
+                <v-img class="white--text align-end" height="50%" :src="slide.src" />
+                <v-card-title class="text">{{ slide.text }}</v-card-title>
               </v-card>
             </v-slide-item>
           </v-slide-group>
@@ -28,20 +32,22 @@
               mdi-arrow-left-bold
             </v-icon>
           </v-btn>
-          <v-btn
-            class="next"
-            fab
-            dark
-            large
-            color="indigo"
-            @click="next()"
-          >
-            <v-icon dark>
-              mdi-arrow-right-thick
-            </v-icon>
-          </v-btn>
         </v-sheet>
       </div>
+    </v-col>
+    <v-col cols="2">
+      <v-btn
+        class="next"
+        fab
+        dark
+        large
+        color="indigo"
+        @click="next()"
+      >
+        <v-icon dark>
+          mdi-arrow-right-thick
+        </v-icon>
+      </v-btn>
     </v-col>
   </v-row>
 </template>
@@ -113,26 +119,255 @@ li {
 .backcolor{
   background:whitesmoke;
 }
-/* 重ねるためにrelativeにしている */
-.slide-group-wrap {
-  position: relative;
-}
+
 /* nextボタンの設定 */
 .next{
-  position:absolute;
-  /* bottom: 10px; */
+  /* position:absolute; */
   top: 200px;
-  right: 300px
 }
 /* prevボタンの設定 */
 .prev{
   position:absolute;
-  /* bottom: 10px; */
   top: 200px;
-  left: 300px
+  left: -100px;
 }
-/* 選択していない要素を薄くしている */
-.not-select{
-  opacity:0.5;
+/* 重ねるためにrelativeにしている */
+.slide-group-wrap {
+  position: relative;
+}
+@media screen and (min-width: 600px) {
+  .select {
+    margin: 0 20px 0 0;
+    width: 180px;
+    height: 250px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    /* font-size: 10px; */
+    opacity:0.5;
+    margin: 60px 30px 0 0;
+    width: 100px;
+    height: 160px;
+  }
+  /* nextボタンの設定 */
+  .next{
+    /* position:absolute; */
+    top: 120px;
+  }
+  /* prevボタンの設定 */
+  .prev{
+    position:absolute;
+    top: 120px;
+    left: -100px;
+  }
+  .text{
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 200px;
+    height: 300px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    /* font-size: 10px; */
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 120px;
+    height: 180px;
+  }
+  /* nextボタンの設定 */
+  .next{
+    /* position:absolute; */
+    top: 150px;
+  }
+  /* prevボタンの設定 */
+  .prev{
+    position:absolute;
+    top: 150px;
+    left: -100px;
+  }
+  .text{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 250px;
+    height: 300px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 140px;
+    height: 200px;
+  }
+  /* nextボタンの設定 */
+  .next{
+    /* position:absolute; */
+    top: 150px;
+  }
+  /* prevボタンの設定 */
+  .prev{
+    position:absolute;
+    top: 150px;
+    left: -100px;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 300px;
+    height: 400px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 150px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1130px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 350px;
+    height: 400px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 160px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 400px;
+    height: 400px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 180px;
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 450px;
+    height: 400px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 200px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 500px;
+    height: 400px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 200px;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 1630px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 500px;
+    height: 450px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 250px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 550px;
+    height: 450px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1790px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 600px;
+    height: 450px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 250px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1930px) {
+  .select {
+    margin: 0 20px 0 0;
+    /* width: 30%;
+    height: 100%; */
+    width: 650px;
+    height: 450px;
+  }
+  /* 選択していない要素を薄くしている */
+  .not-select{
+    opacity:0.5;
+    margin: 60px 20px 0 0;
+    width: 270px;
+    height: 300px;
+  }
 }
 </style>
