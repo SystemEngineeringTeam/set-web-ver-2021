@@ -2,7 +2,7 @@
   <div>
     <h2 class="mt-12 mb-8 text-center font-weight-bold">news story</h2>
 
-    <v-row>
+    <v-row class="justify-center">
       <v-col
         v-for="item in news"
         :key="item.topic"
@@ -40,7 +40,7 @@ export default {
           date: "2021/4/28(水)",
           contents:
             "4/28(水)勉強会開催しました。勉強会には１年生の生徒が多く参加してくれて、Pythonを学ぶことができました。",
-          cols: 11,
+          cols: 12,
           sm: 6,
           md: 6,
           lg: 6,
@@ -51,7 +51,7 @@ export default {
           topic: "シス研ハッカソン",
           date: "2021/3/15~3/19",
           contents: "3/15~3/19の5日間でシス研ハッカソン開催しました",
-          cols: 11,
+          cols: 12,
           sm: 3,
           md: 3,
           lg: 3,
@@ -66,7 +66,7 @@ export default {
           date: "2020/11/6(土)",
           contents:
             "11/6(土)梶研究室を借りて院生と学部生が仲良くタコパしました",
-          cols: 11,
+          cols: 12,
           sm: 3,
           md: 3,
           lg: 3,
@@ -77,7 +77,7 @@ export default {
           topic: "駅伝",
           date: "2020/12/4(土)",
           contents: "12/4(土)駅伝大会参加しました。つらい...帰りたい",
-          cols: 11,
+          cols: 12,
           sm: 3,
           md: 3,
           lg: 3,
@@ -88,7 +88,7 @@ export default {
           topic: "たこ",
           date: "xxxx/xx/xx(x)",
           contents: "This is a tako",
-          cols: 11,
+          cols: 12,
           sm: 3,
           md: 3,
           lg: 3,
