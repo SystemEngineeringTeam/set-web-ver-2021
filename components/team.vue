@@ -7,9 +7,9 @@
           order="2"
           order-md="1"
           cols="12"
-          sm="11"
+          sm="9"
           md="6"
-          lg="6"
+          lg="5"
           xl="6"
           class="pl-7 images"
         >
@@ -22,7 +22,7 @@
           </v-card>
         </v-col>
 
-        <v-col order="1" order-md="2" cols="12" sm="11" md="6" lg="6" xl="6"
+        <v-col order="1" order-md="2" cols="11" sm="9" md="6" lg="5" xl="6"
           ><center class="pt-15">
             <p style="font-size: 30px; font-weight: bold">Creative</p>
             <div class="px-11">
@@ -35,7 +35,7 @@
       </v-row>
 
       <v-row class="pt-14">
-        <v-col cols="12" sm="11" md="6" lg="6" xl="6"
+        <v-col cols="12" sm="9" md="6" lg="5" xl="6"
           ><center class="pt-15">
             <p style="font-size: 30px; font-weight: bold">Infrastructure</p>
             <div class="px-11">
@@ -45,7 +45,7 @@
             </div>
           </center></v-col
         >
-        <v-col cols="12" sm="11" md="6" lg="6" xl="6" class="pr-7 images">
+        <v-col cols="12" sm="9" md="6" lg="5" xl="6" class="pr-7 images">
           <v-card elevation="0">
             <img
               class="pc server web"
