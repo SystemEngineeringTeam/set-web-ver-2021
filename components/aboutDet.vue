@@ -1,201 +1,81 @@
 <template>
-  <div class="aboutHeight pt-5">
-    <!-- <transition name="slide"> -->
-    <!-- <div v-show="animation"> -->
-    <v-row class="justify-center">
-      <v-col cols="10" sm="5" md="5" lg="5" xl="5">
-        <v-dialog transition="dialog-top-transition" max-width="800">
-          <template v-slot:activator="{ on, attrs }">
-            <div class="ImgBox">
-              <v-img
-                v-bind="attrs"
-                v-on="on"
-                class="photo"
-                :src="require('@/assets/images/hackathon.jpeg')"
-                aspect-ratio="2"
-              ></v-img>
-              <p class="title">勉強会</p>
-            </div>
-          </template>
-          <template v-slot:default="dialog">
-            <v-card>
-              <v-img
-                :src="require('@/assets/images/hackathon.jpeg')"
-                aspect-ratio="2"
-              ></v-img>
-              <v-card-text>
-                <h2 class="font-weight-bold pt-12 pb-8">勉強会</h2>
-                <p>
-                  インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。
-                </p>
-              </v-card-text>
-              <v-card-actions class="justify-end">
-                <v-btn text @click="dialog.value = false">閉じる</v-btn>
-              </v-card-actions>
-            </v-card>
-          </template>
-        </v-dialog>
-      </v-col>
-      <v-col cols="10" sm="5" md="5" lg="5" xl="5">
-        <div class="ImgBox">
-          <v-dialog transition="dialog-top-transition" max-width="800">
-            <template v-slot:activator="{ on, attrs }">
-              <v-img
-                v-bind="attrs"
-                v-on="on"
-                class="photo"
-                :src="require('@/assets/images/benkyo.jpg')"
-                aspect-ratio="2"
-              ></v-img>
-            </template>
-            <template v-slot:default="dialog">
-              <v-card>
-                <v-img
-                  :src="require('@/assets/images/benkyo.jpg')"
-                  aspect-ratio="2"
-                ></v-img>
-                <v-card-text>
-                  <h2 class="font-weight-bold pt-12 pb-8">ハッカソン</h2>
-                  <p>
-                    ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。
-                  </p>
-                </v-card-text>
-                <v-card-actions class="justify-end">
-                  <v-btn text @click="dialog.value = false">閉じる</v-btn>
-                </v-card-actions>
-              </v-card>
-            </template>
-          </v-dialog>
-          <p class="title">ハッカソン</p>
-        </div>
-      </v-col>
-    </v-row>
-    <v-row class="justify-center">
-      <v-col cols="10" sm="5" md="5" lg="5" xl="5">
-        <div class="ImgBox">
-          <v-dialog transition="dialog-bottom-transition" max-width="800">
-            <template v-slot:activator="{ on, attrs }">
-              <v-img
-                v-bind="attrs"
-                v-on="on"
-                class="photo"
-                :src="require('@/assets/images/takopa.jpg')"
-                aspect-ratio="2"
-              ></v-img>
-            </template>
-            <template v-slot:default="dialog">
-              <v-card>
-                <v-img
-                  :src="require('@/assets/images/takopa.jpg')"
-                  aspect-ratio="2"
-                ></v-img>
-                <v-card-text>
-                  <h2 class="font-weight-bold pt-12 pb-8">イベント</h2>
-                  <p>
-                    新入生歓迎やBBQなどのイベントや、
-                    大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。
-                  </p>
-                </v-card-text>
-                <v-card-actions class="justify-end">
-                  <v-btn text @click="dialog.value = false">閉じる</v-btn>
-                </v-card-actions>
-              </v-card>
-            </template>
-          </v-dialog>
-          <p class="title">イベント</p>
-        </div>
-      </v-col>
-      <v-col cols="10" sm="5" md="5" lg="5" xl="5">
-        <div class="ImgBox">
-          <v-dialog transition="dialog-bottom-transition" max-width="800">
-            <template v-slot:activator="{ on, attrs }">
-              <v-img
-                v-bind="attrs"
-                v-on="on"
-                class="photo"
-                :src="require('@/assets/images/presen.jpg')"
-                aspect-ratio="2"
-              ></v-img>
-            </template>
-            <template v-slot:default="dialog">
-              <v-card>
-                <v-img
-                  :src="require('@/assets/images/presen.jpg')"
-                  aspect-ratio="2"
-                ></v-img>
-                <v-card-text>
-                  <h2 class="font-weight-bold pt-12 pb-8">工科展</h2>
-                  <p>
-                    大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。
-                  </p>
-                </v-card-text>
-                <v-card-actions class="justify-end">
-                  <v-btn text @click="dialog.value = false">閉じる</v-btn>
-                </v-card-actions>
-              </v-card>
-            </template>
-          </v-dialog>
-          <p class="title">工科展</p>
-        </div>
-      </v-col>
-    </v-row>
-    <!-- </div> -->
-    <!-- </transition> -->
-  </div>
-  <!-- <LightBox ref="lightbox" :images="images"></LightBox> -->
-</template>
+  <div class="aboutHeight">
+        <v-row class="justify-center">
+            <v-col v-for="item in about" :key="item.topic" :cols="item.cols">
+              <div class="ImgBox">
+                <v-dialog transition="dialog-top-transition"
+                  max-width="800">
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-img
+                      v-bind="attrs"
+                      v-on="on"
+                      class="photo"
+                      v-bind:src="item.srcimg"
+                      aspect-ratio="2"
+                    ></v-img>
+                  </template>
+                  <template v-slot:default="dialog">
+                      <v-card>
+                      <v-img
+                        :src="item.srcimg"
+                        aspect-ratio="2"
+                      ></v-img>
+                      <v-card-text>
+                        <h2 class="font-weight-bold pt-12 pb-8">{{item.topic}}</h2>
+                        <p>{{item.contents}}</p>
+                      </v-card-text>
+                      <v-card-actions class="justify-end">
+                        <v-btn
+                          text
+                          @click="dialog.value = false"
+                        >閉じる</v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </template>
+                </v-dialog>
+                <p class="title">{{item.topic}}</p>
+              </div>
+            </v-col>
+        </v-row>
 
+  </div>
+</template>
 <script>
 export default {
   data() {
     return {
-      scrollY: 0,
-      animation: false,
-      width: 0,
-      images: [
+      about:[
         {
-          src: "https://pbs.twimg.com/media/Eyhu7l_U8AMylB1?format=jpg&name=medium",
+          srcimg:require('@/assets/images/hackathon.jpeg'),
+          topic:"勉強会",
+          contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
+          cols:5,
+          daialog_contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
         },
         {
-          src: "http://example.com/image2.jpg",
+          srcimg:require('@/assets/images/benkyo.jpg'),
+          topic:"ハッカソン",
+          contents:"ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。",
+          cols:5,
+          daialog_contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
         },
         {
-          src: "http://example.com/image3.jpg",
+          srcimg:require('@/assets/images/takopa.jpg'),
+          topic:"イベント",
+          contents:"新入生歓迎やBBQなどのイベントや、大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。",
+          cols:5,
         },
-      ],
-    };
-  },
-  created() {
-    // window.addEventListener('load',this.load)
-  },
-  mounted() {
-    // // 要素の幅を取得するメソッド
-    // this.getTargetWidth()
-    // window.addEventListener('load',this.load)
-    // window.addEventListener('scroll', this.handleScroll);
-    // // ユーザーがウィンドウサイズを変更したら実行されるようにする
-    // window.addEventListener('resize', this.getTargetWidth)
-  },
-  methods: {
-    // load(){
-    //   if(this.width < 1800){
-    //     this.animation = true
-    //   }
-    // },
-    // handleScroll() {
-    //     this.scrollY = window.scrollY;
-    //     if(this.scrollY >= 10 || this.width > 1600){
-    //         this.animation = true
-    //     }
-    // },
-    // getTargetWidth () {
-    //     if(this.width > 1500){
-    //         this.animation = true
-    //     }
-    //     this.width = window.innerWidth;
-    // }
-  },
-};
+        {
+          srcimg:require('@/assets/images/presen.jpg'),
+          topic:"工科展",
+          contents:"大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。",
+          cols:5,
+        }
+      ]
+    }
+  }
+}
+
 </script>
 
 <style scoped>
@@ -231,78 +111,9 @@ export default {
   font-weight: bold;
 }
 
-/* .v-img{
-  transition: opacity .4s ease-in-out;
-}
-
-.v-img:not(.on-hover) {
-  opacity: 0.6;
- } */
 
 h2 {
   font-size: 1.5rem;
 }
 
-/* .slide-enter { */
-/* 現れた時の最初の状態 */
-/* opacity: 0; */
-/* } */
-/* .slide-enter-active {
-  現れる時のトランジションの状態
-  animation: slide-in 2s;
-} */
-/* .slide-enter-to { */
-/* 現れた時の最後の状態 */
-/* opacity: 1; */
-/* } */
-/* .slide-leave { */
-/* 消えるときの最初の状態 */
-/* opacity: 1; */
-/* } */
-/* .slide-leave-active { */
-/* 消えるときのトランジションの状態 */
-/* animation: slide-in 2s reverse; */
-/* } */
-/* .slide-leave-to { */
-/* 消えるときの最後の状態 */
-
-/* } */
-
-/* @keyframes slide-in {
-  from{
-    transform: translateY(300px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-/* レスポンシブ対応 */
-
-/* @media screen and (min-width: 1200px) {
-  .aboutHeight {
-    height:1100px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .aboutHeight {
-    height:1050px;
-  }
-
-}
-@media only screen and (min-width: 321px) and (max-width: 440px) {
-  .aboutHeight {
-    height:800px;
-  }
-}
-@media only screen and (min-width: 441px) and (max-width: 509px) {
-  .aboutHeight {
-    height:800px;
-  }
-}
-@media only screen and (min-width: 510px) and (max-width: 1199px) {
-  .aboutHeight {
-    height:900px;
-  }
-} */
 </style>
