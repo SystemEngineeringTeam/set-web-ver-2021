@@ -87,7 +87,13 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/google-gtag", //google analyticsのモジュール追加
   ],
+  "google-gtag": {
+    id: "UA-hogehoge", //本番環境はここを書き換える
+    debug: true, // デベロッパーモード
+  },
+
   pwa: {
     manifest: {
       name: "愛知工業大学 システム工学研究会",

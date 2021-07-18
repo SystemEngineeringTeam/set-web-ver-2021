@@ -37,6 +37,7 @@
               </div>
             </v-col>
         </v-row>
+
   </div>
 </template>
 <script>
@@ -74,39 +75,45 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>
-.photo:hover{
-  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
+.photo:hover {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
   border-radius: 5px;
-  opacity: 1.0;
+  opacity: 1;
   transform: scale(1.2);
   transition-duration: 0.3s;
 }
-.photo{
-  filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6));
+
+.photo {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
   border-radius: 5px;
   opacity: 0.6;
   transition-duration: 0.3s;
 }
-.ImgBox{
+
+.ImgBox {
   /* filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.6)); */
   background: #000;
   overflow: hidden;
   position: relative;
   border-radius: 10px 10px 10px 10px;
 }
-.title{
+
+.title {
   position: absolute;
-  top:calc(50% - 25px);
-  left:calc(46% - 25px);
+  top: calc(50% - 25px);
+  left: calc(46% - 25px);
   font-size: 50px;
   color: #ffffff;
   font-weight: bold;
 }
 
+
 h2 {
-    font-size:1.5rem;
+  font-size: 1.5rem;
 }
+
 </style>

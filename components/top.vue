@@ -8,8 +8,8 @@
     </div>
     <div class="video-sidebar font-weight-bold">
       <h1>System Engineering Team</h1>
-      <p class="comment">
-        　　　　　　We're a club in Aichi Institute of Technology
+      <p class="comment" style="text-align: center">
+        We're a club in Aichi Institute of Technology
       </p>
     </div>
   </div>
