@@ -1,7 +1,7 @@
 <template>
   <v-row class="justify-center justify-space-around">
     <v-col cols="0">
-      <h2 class="text-center mb-8">Question</h2>
+      <h2 class="text-center mb-8 pt-10 mt-10">Question</h2>
       <v-card outlined class="mx-auto mb-5 cardwidth">
         <!-- cardwidthはレスポンシブ対応,widthを占める割合をbreakpointで変えている -->
         <v-card-actions @click="show1 = !show1" style="font-weight: bold">

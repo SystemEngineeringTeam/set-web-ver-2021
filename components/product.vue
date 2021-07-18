@@ -1,7 +1,7 @@
 <template>
   <v-row  class="pa-0 ma-5 justify-space-around">
     <v-col cols="10">
-      <h2 class="text-center pb-8 pt-10">Products</h2>
+      <h2 class="text-center pb-8 pt-10 mt-10">Products</h2>
       <div class="slide-group-wrap">
         <v-sheet class="backcolor">
           <v-slide-group class="slide-group" center-active show-arrows>

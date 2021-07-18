@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="mt-12 mb-8 text-center font-weight-bold">news story</h2>
+    <h2 class="mt-10 pt-10 mb-8 text-center font-weight-bold">news story</h2>
 
     <v-row class="justify-center">
       <v-col

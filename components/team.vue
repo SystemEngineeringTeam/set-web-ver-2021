@@ -1,6 +1,6 @@
 <template>
   <div class="center">
-    <h2 class="text-center mb-8">Team Activities</h2>
+    <h2 class="text-center mt-10 pt-10 mb-6">Team Activities</h2>
     <div class="font">
       <v-row>
         <v-col
