@@ -2,7 +2,7 @@
   <div style="height: 200px" class="tmp mb-10">
     <transition name="slide">
       <div v-show="animation" class="mt-6">
-        <h2 class="mb-8 test">A Few Words About Us</h2>
+        <h2 class="mb-8">About us</h2>
         <p class="mb-8 pt-7">
           システムシステム工学研究会は愛知工業大学公認の情報系サークルです。
           <br />「多彩な学生が交流を通じて成長する」をモットーに活動しています。
