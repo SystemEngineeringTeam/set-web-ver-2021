@@ -1,43 +1,42 @@
 <template>
   <div class="aboutHeight">
-        <v-row class="justify-center">
-            <v-col v-for="item in about" :key="item.topic" :cols="item.cols">
-              <div class="ImgBox">
-                <v-dialog transition="dialog-top-transition"
-                  max-width="800">
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-img
-                      v-bind="attrs"
-                      v-on="on"
-                      class="photo"
-                      v-bind:src="item.srcimg"
-                      aspect-ratio="2"
-                    ></v-img>
-                  </template>
-                  <template v-slot:default="dialog">
-                      <v-card>
-                      <v-img
-                        :src="item.srcimg"
-                        aspect-ratio="2"
-                      ></v-img>
-                      <v-card-text>
-                        <h2 class="font-weight-bold pt-12 pb-8">{{item.topic}}</h2>
-                        <p>{{item.contents}}</p>
-                      </v-card-text>
-                      <v-card-actions class="justify-end">
-                        <v-btn
-                          text
-                          @click="dialog.value = false"
-                        >閉じる</v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </template>
-                </v-dialog>
-                <p class="title">{{item.topic}}</p>
-              </div>
-            </v-col>
-        </v-row>
-
+    <v-row class="justify-center">
+      <v-col v-for="item in about" :key="item.topic" :cols="item.cols">
+        <div class="ImgBox">
+          <v-dialog transition="dialog-top-transition"
+            max-width="800">
+            <template v-slot:activator="{ on, attrs }">
+              <v-img
+                v-bind="attrs"
+                v-on="on"
+                class="photo"
+                v-bind:src="item.srcimg"
+                aspect-ratio="2"
+              ></v-img>
+            </template>
+            <template v-slot:default="dialog">
+                <v-card>
+                <v-img
+                  :src="item.srcimg"
+                  aspect-ratio="2"
+                ></v-img>
+                <v-card-text>
+                  <h2 class="font-weight-bold pt-12 pb-8">{{item.topic}}</h2>
+                  <p>{{item.contents}}</p>
+                </v-card-text>
+                <v-card-actions class="justify-end">
+                  <v-btn
+                    text
+                    @click="dialog.value = false"
+                  >閉じる</v-btn>
+                </v-card-actions>
+              </v-card>
+            </template>
+          </v-dialog>
+          <p class="title">{{item.topic}}</p>
+        </div>
+      </v-col>
+    </v-row>
   </div>
 </template>
 <script>
