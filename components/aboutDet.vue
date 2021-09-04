@@ -33,7 +33,7 @@
                     </v-card>
                   </template>
                 </v-dialog>
-                <p class="title">{{item.topic}}</p>
+                <h2 class="title">{{item.topic}}</h2>
               </div>
             </v-col>
         </v-row>
@@ -106,14 +106,9 @@ export default {
   position: absolute;
   top: calc(50% - 25px);
   left: calc(46% - 25px);
-  font-size: 50px;
   color: #ffffff;
   font-weight: bold;
 }
 
-
-h2 {
-  font-size: 1.5rem;
-}
 
 </style>

@@ -105,9 +105,6 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  font-size: 1.75rem;
-}
 .photo:hover {
   filter: opacity(70%);
   cursor: pointer;

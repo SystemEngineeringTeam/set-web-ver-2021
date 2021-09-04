@@ -14,9 +14,6 @@ export default {
 };
 </script>
 <style>
-* {
-  font-family: Montserrat;
-}
 .slide-group > .v-slide-group__next {
   display: none;
 }
