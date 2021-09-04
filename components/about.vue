@@ -32,11 +32,5 @@ export default {
 p {
   text-align: center;
 }
-h2 {
-  text-align: center;
-  font-size: 1.75rem;
-}
-* {
-  font-family: Montserrat;
-}
+
 </style>

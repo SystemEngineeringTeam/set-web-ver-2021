@@ -1,7 +1,7 @@
 <template>
   <div class="center">
     <h2 class="text-center mt-10 pt-10 mb-6">Team Activities</h2>
-    <div class="font">
+    <div>
       <v-row>
         <v-col
           order="2"
@@ -63,9 +63,6 @@
 </script>
 
 <style scoped>
-h2 {
-  font-size: 1.75rem;
-}
 .center {
   text-align: center;
 }
@@ -78,9 +75,6 @@ h2 {
   max-width: 100%;
 }
 
-.font {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 .web {
   filter: drop-shadow(2px 2px 2px #aaa);
 }
