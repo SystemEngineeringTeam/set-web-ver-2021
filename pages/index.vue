@@ -14,10 +14,6 @@
 </template>
 
 <script>
-import Linked from "../components/Linked.vue";
-export default {
-  components: { Linked },
-};
 </script>
 <style scoped>
 .backcolor {
