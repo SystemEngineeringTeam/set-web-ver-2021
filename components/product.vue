@@ -97,10 +97,6 @@ export default {
 };
 </script>
 <style scoped>
-h2{
-  font-size: 1.75rem;
-}
-
 .MoreButton {
   margin-top: 40px;
 }

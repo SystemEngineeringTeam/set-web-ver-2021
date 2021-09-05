@@ -107,16 +107,7 @@ export default {
 </script>
 
 <style scoped>
-.answer {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 @media screen and (min-width: 1200px) {
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-  }
-
   .right {
     margin: 0 0 0 auto;
   }
@@ -133,11 +124,6 @@ export default {
 }
 
 @media screen and (max-width: 320px) {
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-  }
-
   .right {
     margin: 0 0 0 auto;
   }
@@ -154,11 +140,6 @@ export default {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 440px) {
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-  }
-
   .right {
     margin: 0 0 0 auto;
   }
@@ -175,11 +156,6 @@ export default {
 }
 
 @media only screen and (min-width: 441px) and (max-width: 509px) {
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-  }
-
   .right {
     margin: 0 0 0 auto;
   }
@@ -196,11 +172,6 @@ export default {
 }
 
 @media only screen and (min-width: 510px) and (max-width: 1199px) {
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-  }
-
   .right {
     margin: 0 0 0 auto;
   }

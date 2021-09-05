@@ -32,7 +32,6 @@ export default {};
   opacity: 1;
   font-weight: 900;
   font-size: 2.375vw;
-  font-family: Montserrat;
 }
 .comment {
   font-weight: lighter;
