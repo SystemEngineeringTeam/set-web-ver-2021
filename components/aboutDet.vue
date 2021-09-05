@@ -46,27 +46,27 @@ export default {
     return {
       about:[
         {
-          srcimg:require('@/assets/images/hackathon.jpeg'),
+          srcimg:require('@/assets/webp/hackathon.webp'),
           topic:"勉強会",
           contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
           cols:5,
           daialog_contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
         },
         {
-          srcimg:require('@/assets/images/benkyo.jpg'),
+          srcimg:require('@/assets/webp/benkyo.webp'),
           topic:"ハッカソン",
           contents:"ハッカソンではチーム開発の楽しさや難しさを知ってもらうためシス研で開催する大きなイベントの一つです。",
           cols:5,
           daialog_contents:"インフラ知識からWebデザイン、ゲーム制作などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
         },
         {
-          srcimg:require('@/assets/images/takopa.jpg'),
+          srcimg:require('@/assets/webp/takopa.webp'),
           topic:"イベント",
           contents:"新入生歓迎やBBQなどのイベントや、大学祭では露天を出したり、希望者で駅伝に参加したりなど学校行事にも積極的に参加しています。",
           cols:5,
         },
         {
-          srcimg:require('@/assets/images/presen.jpg'),
+          srcimg:require('@/assets/webp/presen.webp'),
           topic:"工科展",
           contents:"大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。",
           cols:5,

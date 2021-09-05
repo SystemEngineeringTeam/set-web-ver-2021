@@ -35,7 +35,7 @@ export default {
     return {
       news: [
         {
-          srcimg: require("@/assets/images/benkyokai.jpg"),
+          srcimg: require("@/assets/webp/benkyokai.webp"),
           topic: "勉強会",
           date: "2021/4/28(水)",
           contents:
@@ -47,7 +47,7 @@ export default {
           xl: 6,
         },
         {
-          srcimg: require("@/assets/images/benkyokai.jpg"),
+          srcimg: require("@/assets/webp/benkyokai.webp"),
           topic: "シス研ハッカソン",
           date: "2021/3/15~3/19",
           contents: "3/15~3/19の5日間でシス研ハッカソン開催しました",
@@ -61,7 +61,7 @@ export default {
           cols: "auto",
         },
         {
-          srcimg: require("@/assets/images/takopa.jpg"),
+          srcimg: require("@/assets/webp/takopa.webp"),
           topic: "タコパ",
           date: "2020/11/6(土)",
           contents:
@@ -73,7 +73,7 @@ export default {
           xl: 3,
         },
         {
-          srcimg: require("@/assets/images/ekiden.jpg"),
+          srcimg: require("@/assets/webp/ekiden.webp"),
           topic: "駅伝",
           date: "2020/12/4(土)",
           contents: "12/4(土)駅伝大会参加しました。つらい...帰りたい",
@@ -84,7 +84,7 @@ export default {
           xl: 3,
         },
         {
-          srcimg: require("@/assets/images/benkyokai.jpg"),
+          srcimg: require("@/assets/webp/benkyokai.webp"),
           topic: "たこ",
           date: "xxxx/xx/xx(x)",
           contents: "This is a tako",
@@ -98,7 +98,7 @@ export default {
           cols: "auto",
         },
       ],
-      image_src: "@/assets/images/benkyokai.jpg",
+      image_src: "@/assets/webp/benkyokai.webp",
     };
   },
 };

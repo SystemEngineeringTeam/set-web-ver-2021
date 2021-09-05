@@ -52,12 +52,12 @@ export default {
       slides: [
         {
           text: "温度管理システム",
-          src: require('@/assets/sysken_ondo.png'),
+          src: require('@/assets/webp/sysken_ondo.webp'),
           url: "https://set1.ie.aitech.ac.jp/koukaten2016"
         },
         {
           text: "栄養管理アプリ",
-          src:  require('@/assets/sysken_ryouri.png'),
+          src:  require('@/assets/webp/sysken_ryouri.webp'),
           url: "https://set1.ie.aitech.ac.jp/koukaten2017"
         },
         {

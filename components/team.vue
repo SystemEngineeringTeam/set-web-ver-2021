@@ -49,7 +49,7 @@
           <v-card elevation="0">
             <img
               class="pc server web"
-              src="@/assets/server-1235959_1920.jpg/"
+              src="@/assets/webp/server-1235959_1920.webp/"
               alt="パソコン用の画像"
             />
           </v-card>
