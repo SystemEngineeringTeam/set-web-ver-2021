@@ -16,7 +16,7 @@
           <v-card elevation="0">
             <img
               class="pc web"
-              src="@/assets/work-731198_1920.jpg/"
+              src="@/assets/webp/work-731198_1920.webp/"
               alt="パソコン用の画像"
             />
           </v-card>
