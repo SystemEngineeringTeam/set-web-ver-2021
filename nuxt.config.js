@@ -129,6 +129,9 @@ export default {
       //   }
       // }
     },
+    defaultAssets: {
+      font: false,
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
