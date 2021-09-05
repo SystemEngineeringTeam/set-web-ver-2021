@@ -40,11 +40,11 @@
             <p style="font-size: 25px; font-weight: bold">Infrastructure</p>
             <div class="px-11">
               <p class="pt-7" style="font-size: 18px; font-weight: 500">
-                インフラ班では、主に、シス件に置いてあるサーバーの管理を行い、設計や構築、保守点検などを行います！
+                インフラ班では、シス研に置いてあるサーバーの管理を行い、設計や構築、ネットワークの運用保守などを行います！　
               </p>
             </div>
-          </center></v-col
-        >
+          </center>
+        </v-col>
         <v-col cols="12" sm="9" md="6" lg="5" xl="6" class="pr-7 images">
           <v-card elevation="0">
             <img

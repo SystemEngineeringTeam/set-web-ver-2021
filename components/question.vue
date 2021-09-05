@@ -59,7 +59,7 @@
             <v-divider></v-divider>
 
             <v-card-text class="answer">
-              ゲーム開発、サーバ構築、モデリングなどなど幅広く部員が興味を持ったことをしています。<br />
+              ゲーム開発、サーバ構築、モデリングなど幅広く部員が興味を持ったことをしています。<br />
               特に何かをやらなければいけないということはありません。
             </v-card-text>
           </div>
@@ -81,7 +81,8 @@
           <div v-show="show4">
             <v-divider></v-divider>
             <v-card-text class="answer">
-              月曜から金曜まで時間に決まりなく活動しています!
+              部室での活動は月曜から金曜まで時間に決まりなく活動しています!<br>
+              休日や祝日はオンラインでの活動が活発です!
             </v-card-text>
           </div>
         </v-expand-transition>
