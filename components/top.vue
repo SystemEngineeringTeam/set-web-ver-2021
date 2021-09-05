@@ -4,7 +4,7 @@
     <video src="@/assets/toplevel2.mp4" autoplay playsinline muted loop></video>
     -->
     <div class="filter">
-      <img src="@/assets/images/topimage.png" class="filter-img" />
+      <img src="@/assets/webp/topimage.webp" class="filter-img" />
     </div>
     <div class="video-sidebar font-weight-bold">
       <h1>System Engineering Team</h1>

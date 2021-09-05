@@ -58,11 +58,6 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Oswald|Libre+Baskerville&display=swap",
-      },
     ],
   },
 
@@ -89,12 +84,14 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
-    "@nuxtjs/google-gtag", //google analyticsのモジュール追加
+    //"@nuxtjs/google-gtag", //google analyticsのモジュール追加
   ],
+  /*
   "google-gtag": {
     id: "UA-hogehoge", //本番環境はここを書き換える
     debug: true, // デベロッパーモード
   },
+  */
 
   pwa: {
     manifest: {

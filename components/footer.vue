@@ -50,7 +50,6 @@ export default {
     };
   },
 };
-//["mdi-twitter", "mdi-github", "mdi-book-open-blank-variant"],
 </script>
 
 <style>

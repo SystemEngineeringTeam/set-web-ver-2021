@@ -77,7 +77,6 @@ export default {
     };
   },
 };
-//@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@1&display=swap");
 </script>
 
 <style>
