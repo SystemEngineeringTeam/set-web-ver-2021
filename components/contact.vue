@@ -10,14 +10,13 @@
   </v-card>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
 .googleform-wrapper {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 860px;
   overflow-y: scroll;
 }
 
@@ -27,6 +26,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background:whitesmoke;
+  background: whitesmoke;
 }
 </style>
