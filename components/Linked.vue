@@ -1,7 +1,7 @@
 <template>
   <div align="center" class="all">
     <v-container style="position: relative; top: -38px">
-      <v-row>
+      <v-row no-gutters>
         <v-col>
           <a
             href="https://twitter.com/set_official"
@@ -11,7 +11,7 @@
               large
               elevation="1"
               color="#1DA1F2"
-              height="3.2rem"
+              height="2.6rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -31,7 +31,7 @@
               large
               elevation="1"
               color="white"
-              height="3.2rem"
+              height="2.6rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -51,7 +51,7 @@
               large
               elevation="1"
               color="black"
-              height="3.2rem"
+              height="2.6rem"
               class="buttonline"
               style="text-transform: none"
             >
@@ -118,26 +118,30 @@ export default {
 }
 @media only screen and (min-width: 417px) and (max-width: 544px) {
   .buttonline {
-    top: 49px;
+    top: 22px;
     width: 22rem;
+    margin-top: 15px;
   }
 }
 @media only screen and (min-width: 309px) and (max-width: 416px) {
   .buttonline {
-    top: 49px;
+    top: 25px;
     width: 16rem;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 20px) and (max-width: 309px) {
   .buttonline {
-    top: 49px;
+    top: 30px;
     width: 12rem;
+    margin-top: 8px;
   }
 }
 @media only screen and (min-width: 20px) and (max-width: 241px) {
   .buttonline {
-    top: 49px;
+    top: 30px;
     width: 10rem;
+    margin-top: 5px;
   }
 }
 </style>
