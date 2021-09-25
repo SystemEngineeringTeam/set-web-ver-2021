@@ -1,9 +1,8 @@
 <template>
-  <v-row class="justify-center justify-space-around">
+  <v-row class="justify-center justify-space-around" no-gutters>
     <v-col cols="0">
       <h2 class="text-center mb-8 pt-10 mt-10">Question</h2>
       <v-card outlined class="mx-auto mb-5 cardwidth">
-        <!-- cardwidthはレスポンシブ対応,widthを占める割合をbreakpointで変えている -->
         <v-card-actions @click="show1 = !show1" style="font-weight: bold">
           <v-avatar slot="icon" color="black accent-4" size="40">
             <v-icon dark color="white" class="pr-1" size="24px">Q</v-icon>
@@ -81,7 +80,7 @@
           <div v-show="show4">
             <v-divider></v-divider>
             <v-card-text class="answer">
-              部室での活動は月曜から金曜まで時間に決まりなく活動しています!<br>
+              部室での活動は月曜から金曜まで時間に決まりなく活動しています!<br />
               休日や祝日はオンラインでの活動が活発です!
             </v-card-text>
           </div>
