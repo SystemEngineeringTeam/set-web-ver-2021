@@ -37,8 +37,11 @@
         <v-expand-transition>
           <div v-show="show2">
             <v-divider></v-divider>
-
-            <v-card-text class="answer"> 4号館別館301号室です。 </v-card-text>
+            <v-card-text class="answer">
+              <a href="https://goo.gl/maps/hjwBXetqUVJMQMBu7"
+                >4号館別館301号室です。
+              </a>
+            </v-card-text>
           </div>
         </v-expand-transition>
       </v-card>
@@ -81,7 +84,7 @@
           <div v-show="show4">
             <v-divider></v-divider>
             <v-card-text class="answer">
-              部室での活動は月曜から金曜まで時間に決まりなく活動しています!<br>
+              部室での活動は月曜から金曜まで時間に決まりなく活動しています!<br />
               休日や祝日はオンラインでの活動が活発です!
             </v-card-text>
           </div>
