@@ -1,5 +1,5 @@
 <template>
-  <v-row  class="pa-0 ma-5 justify-space-around align-center" justify-center>
+  <v-row  class="pa-0 ma-5 justify-space-around align-center">
     <v-col cols="12">
       <h2 class="text-center pb-8 pt-10 mt-10">Products</h2>
     </v-col>
@@ -17,7 +17,7 @@
         </v-card>
       </v-col>
     </template>
-    <v-col cols="1">
+    <v-col cols="6" style="text-align: center;">
       <v-btn
         x-large
         dark
@@ -29,7 +29,7 @@
         </v-icon>
       </v-btn>
     </v-col>
-    <v-col cols="1">
+    <v-col cols="6" style="text-align: center;">
       <v-btn
         x-large
         dark
