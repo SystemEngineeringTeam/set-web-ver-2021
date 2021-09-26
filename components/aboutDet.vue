@@ -10,7 +10,7 @@
                 v-on="on"
                 class="photo"
                 v-bind:src="item.srcimg"
-                aspect-ratio="2.5"
+                aspect-ratio="2.9"
               ></v-img>
             </template>
             <template v-slot:default="dialog">
