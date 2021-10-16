@@ -1,47 +1,45 @@
 <template>
-  <v-row  class="pa-0 ma-5 justify-space-around">
-    <v-col cols="10">
+  <v-row  class="pa-0 ma-5 justify-space-around align-center">
+    <v-col cols="12">
       <h2 class="text-center pb-8 pt-10 mt-10">Products</h2>
-      <div class="slide-group-wrap">
-        <v-sheet class="backcolor">
-          <v-slide-group class="slide-group" center-active show-arrows>
-            <v-slide-item v-for="(slide,i) in slides" :key="i">
-              <v-card v-if="i==selectItem" :href="slide.url" style="margin: 0 20px 0 0; width: 850px; height:500px;">
-                <v-img class="white--text align-end" height="300px" :src="slide.src" />
-                <v-card-title>{{ slide.text }}</v-card-title>
-              </v-card>
-              <v-card v-else class="not-select" style="margin: 60px 20px 0 0; width: 320px; height:300px;">
-                <v-img class="white--text align-end" height="120px" :src="slide.src" />
-                <v-card-title>{{ slide.text }}</v-card-title>
-              </v-card>
-            </v-slide-item>
-          </v-slide-group>
-          <v-btn
-            class="prev"
-            fab
-            dark
-            large
-            color="indigo"
-            @click="prev()"
-          >
-            <v-icon dark>
-              mdi-arrow-left-bold
-            </v-icon>
-          </v-btn>
-          <v-btn
-            class="next"
-            fab
-            dark
-            large
-            color="indigo"
-            @click="next()"
-          >
-            <v-icon dark>
-              mdi-arrow-right-thick
-            </v-icon>
-          </v-btn>
-        </v-sheet>
-      </div>
+    </v-col>
+    <template v-for="(slide,i) in slides">
+      <v-col v-if="i==selectItem" xs="12" sm="12" md="12" lg="6" xl="6" cols="12" :key="i">
+        <v-card  :href="slide.url" style="height:500px;">
+          <v-img class="white--text align-end" height="300px" :src="slide.src" />
+          <v-card-title>{{ slide.text }}</v-card-title>
+        </v-card>
+      </v-col>
+      <v-col v-else xs="12" sm="12" md="12" lg="3" xl="3" cols="12" :key="i">
+        <v-card class="not-select" style="margin: 60px 0 0 0; height:300px;">
+          <v-img class="white--text align-end" height="180px" :src="slide.src" />
+          <v-card-title>{{ slide.text }}</v-card-title>
+        </v-card>
+      </v-col>
+    </template>
+    <v-col cols="6" style="text-align: center;">
+      <v-btn
+        x-large
+        dark
+        color="indigo"
+        @click="prev()"
+      >
+        <v-icon dark>
+          mdi-arrow-left-bold
+        </v-icon>
+      </v-btn>
+    </v-col>
+    <v-col cols="6" style="text-align: center;">
+      <v-btn
+        x-large
+        dark
+        color="indigo"
+        @click="next()"
+      >
+        <v-icon dark>
+          mdi-arrow-right-thick
+        </v-icon>
+      </v-btn>
     </v-col>
   </v-row>
 </template>
@@ -70,9 +68,6 @@ export default {
     };
   },
   created(){
-    // setInterval(() => {
-    //   this.next()
-    // }, 5000);
   },
   methods: {
     // slidesのリストを右シフトする
@@ -113,26 +108,13 @@ li {
 .backcolor{
   background:whitesmoke;
 }
-/* 重ねるためにrelativeにしている */
-.slide-group-wrap {
-  position: relative;
-}
-/* nextボタンの設定 */
-.next{
-  position:absolute;
-  /* bottom: 10px; */
-  top: 200px;
-  right: 300px
-}
-/* prevボタンの設定 */
-.prev{
-  position:absolute;
-  /* bottom: 10px; */
-  top: 200px;
-  left: 300px
-}
 /* 選択していない要素を薄くしている */
 .not-select{
   opacity:0.5;
+}
+@media screen and (max-width: 1264px) {
+  .not-select{
+    display:none;
+  }
 }
 </style>
