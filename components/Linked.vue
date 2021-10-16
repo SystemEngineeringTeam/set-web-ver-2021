@@ -2,62 +2,19 @@
   <div align="center" class="all">
     <v-container style="position: relative; top: -38px">
       <v-row no-gutters>
-        <v-col>
-          <a
-            href="https://twitter.com/set_official"
-            style="text-decoration: none"
-          >
+        <v-col v-for="link in links" :key="link.title">
+          <a :href="link.url" style="text-decoration: none">
             <v-btn
               large
               elevation="1"
-              color="#1DA1F2"
+              :color="link.color"
               height="2.6rem"
               class="buttonline"
               style="text-transform: none"
             >
-              <div class="btntwitter iconsize">
-                <v-icon dark size="42px">mdi-twitter</v-icon>
-                Twitter
-              </div>
-            </v-btn>
-          </a></v-col
-        >
-        <v-col>
-          <a
-            href="https://github.com/SystemEngineeringTeam"
-            style="text-decoration: none"
-          >
-            <v-btn
-              large
-              elevation="1"
-              color="white"
-              height="2.6rem"
-              class="buttonline"
-              style="text-transform: none"
-            >
-              <div class="btngithub iconsize">
-                <v-icon dark size="40px">mdi-github</v-icon>
-                GitHub
-              </div>
-            </v-btn>
-          </a></v-col
-        >
-        <v-col>
-          <a
-            href="https://set1.ie.aitech.ac.jp/blog"
-            style="text-decoration: none"
-          >
-            <v-btn
-              large
-              elevation="1"
-              color="black"
-              height="2.6rem"
-              class="buttonline"
-              style="text-transform: none"
-            >
-              <div class="btnblog iconsize">
-                <v-icon dark size="40px">mdi-book-open-blank-variant</v-icon>
-                Blog
+              <div :class="link.class" class="iconsize">
+                <v-icon dark size="40px">{{ link.mdi }}</v-icon>
+                {{ link.title }}
               </div>
             </v-btn>
           </a></v-col
@@ -71,9 +28,29 @@
 export default {
   data() {
     return {
-      twitterURL: "https://github.com/hihumikan",
-      githubURL: "https://github.com/hihumikan",
-      blogURL: "https://github.com/hihumikan",
+      links: {
+        twitter: {
+          title: "Twitter",
+          url: "https://twitter.com/set_official",
+          mdi: "mdi-twitter",
+          color: "#1DA1F2",
+          class: "btntwitter",
+        },
+        github: {
+          title: "GitHub",
+          url: "https://github.com/SystemEngineeringTeam",
+          mdi: "mdi-github",
+          color: "white",
+          class: "btngithub",
+        },
+        Blog: {
+          title: "Blog",
+          url: "https://set1.ie.aitech.ac.jp/blog",
+          mdi: "mdi-book-open-blank-variant",
+          color: "black",
+          class: "btnblog",
+        },
+      },
     };
   },
 };
