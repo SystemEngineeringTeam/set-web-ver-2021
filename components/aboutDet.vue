@@ -110,6 +110,11 @@ export default {
   position: relative;
   border-radius: 10px 10px 10px 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .ImgBox {
+    margin: 0px 40px -10px 40px;
+  }
+}
 
 .title {
   position: absolute;
