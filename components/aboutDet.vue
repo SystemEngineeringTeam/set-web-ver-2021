@@ -118,8 +118,13 @@ export default {
 
 .title {
   position: absolute;
-  top: calc(50% - 25px);
-  left: calc(46% - 25px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 120px;
+  height: 50px;
   color: #ffffff;
   font-weight: bold;
 }
