@@ -1,31 +1,32 @@
 <template>
   <div>
     <h2 class="mt-10 pt-10 mb-8 text-center font-weight-bold">news story</h2>
-
-    <v-row class="justify-center">
-      <v-col
-        v-for="item in news"
-        :key="item.topic"
-        :cols="item.cols"
-        :sm="item.sm"
-        :md="item.md"
-        :lg="item.lg"
-        :xl="item.xl"
-      >
-        <template v-if="item.cols != 'auto'">
-          <v-img height="150" class="photo" v-bind:src="item.srcimg"></v-img>
-          <v-card class="upcard rounded-card" height="15vh">
-            <v-card-text class="black--text pt-1 firstNews font-weight-light">
-              <p class="newstopic mt-3">{{ item.topic }}</p>
-              <p class="mt-3">
-                {{ item.contents }}
-              </p>
-              <p class="newsdate mt-3">{{ item.date }}</p>
-            </v-card-text>
-          </v-card>
-        </template>
-      </v-col>
-    </v-row>
+    <v-container>
+      <v-row class="justify-center">
+        <v-col
+          v-for="item in news"
+          :key="item.topic"
+          :cols="item.cols"
+          :sm="item.sm"
+          :md="item.md"
+          :lg="item.lg"
+          :xl="item.xl"
+        >
+          <template v-if="item.cols != 'auto'">
+            <v-img height="150" class="photo" v-bind:src="item.srcimg"></v-img>
+            <v-card class="upcard rounded-card" height="15vh">
+              <v-card-text class="black--text pt-1 firstNews font-weight-light">
+                <p class="newstopic mt-3">{{ item.topic }}</p>
+                <p class="mt-3">
+                  {{ item.contents }}
+                </p>
+                <p class="newsdate mt-3">{{ item.date }}</p>
+              </v-card-text>
+            </v-card>
+          </template>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
