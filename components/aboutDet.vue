@@ -1,7 +1,15 @@
 <template>
   <div class="aboutHeight">
     <v-row class="justify-center">
-      <v-col v-for="item in about" :key="item.topic" :cols="item.cols">
+      <v-col 
+        v-for="item in about" 
+        :key="item.topic" 
+        :cols="item.cols"
+        :sm="item.sm"
+        :md="item.md"
+        :lg="item.lg"
+        :xl="item.xl"
+      >
         <div class="ImgBox">
           <v-dialog transition="dialog-top-transition" max-width="800">
             <template v-slot:activator="{ on, attrs }">
@@ -42,7 +50,11 @@ export default {
           topic: "勉強会",
           contents:
             "インフラ知識から機械学習、Web関連などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
-          cols: 5,
+          cols: 12,
+          sm: 5,
+          md: 5,
+          lg: 5,
+          xl: 5,
           daialog_contents:
             "インフラ知識から機械学習、Web関連などの幅広い勉強会をしています。上級生だけでなく下級生もどんどん勉強会を開催しています。",
         },
@@ -51,7 +63,11 @@ export default {
           topic: "ハッカソン",
           contents:
             "ハッカソンはシス研で開催する大きなイベントの一つで、数人のチームを作り開発をします。チーム開発の楽しさや難しさを知りつつ成長できます。",
-          cols: 5,
+          cols: 12,
+          sm: 5,
+          md: 5,
+          lg: 5,
+          xl: 5,
           daialog_contents:
             "ハッカソンはシス研で開催する大きなイベントの一つで、数人のチームを作り開発をします。チーム開発の楽しさや難しさを知りつつ成長できます。",
         },
@@ -60,14 +76,22 @@ export default {
           topic: "イベント",
           contents:
             "新入生歓迎会やBBQなどのイベントや、大学祭では模擬店を出したり、希望者で駅伝に参加したりなど、学校行事にも積極的に参加しています。",
-          cols: 5,
+          cols: 12,
+          sm: 5,
+          md: 5,
+          lg: 5,
+          xl: 5,
         },
         {
           srcimg: require("@/assets/webp/presen.webp"),
           topic: "工科展",
           contents:
             "大学祭のイベントの一つ。サークルや研究室が作ったものを発表するコンテスト。シス研では学部二年生を中心に活躍してもらいます。",
-          cols: 5,
+          cols: 12,
+          sm: 5,
+          md: 5,
+          lg: 5,
+          xl: 5,
         },
       ],
     };
