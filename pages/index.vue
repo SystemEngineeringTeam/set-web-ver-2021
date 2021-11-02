@@ -15,8 +15,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 <style scoped>
 .backcolor {
   background: whitesmoke;

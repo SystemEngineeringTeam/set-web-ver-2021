@@ -40,7 +40,7 @@
             <p style="font-size: 25px; font-weight: bold">Infrastructure</p>
             <div class="px-11">
               <p class="pt-7" style="font-size: 18px; font-weight: 500">
-                インフラ班では、シス研に置いてあるサーバーの管理を行い、設計や構築、ネットワークの運用保守などを行います！　
+                インフラ班では、シス研に置いてあるサーバーの管理を行い、設計や構築、ネットワークの運用保守などを行います！
               </p>
             </div>
           </center>
@@ -59,8 +59,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
 .center {
