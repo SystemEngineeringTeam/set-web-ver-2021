@@ -19,12 +19,9 @@ export default {
       width: 0,
     };
   },
-  created() {
-  },
-  mounted() {
-  },
-  methods: {
-  },
+  created() {},
+  mounted() {},
+  methods: {},
 };
 </script>
 
@@ -32,5 +29,4 @@ export default {
 p {
   text-align: center;
 }
-
 </style>

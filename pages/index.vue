@@ -1,20 +1,21 @@
 <template>
   <div class="backcolor">
     <Top />
-    <Linked />
-    <About />
-    <AboutDet />
-    <Product />
-    <Team />
-    <News />
-    <Question />
-    <Contact />
+    <v-container>
+      <Linked />
+      <About />
+      <AboutDet />
+      <Product />
+      <Team />
+      <News />
+      <Question />
+      <Contact />
+    </v-container>
     <Footer />
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 <style scoped>
 .backcolor {
   background: whitesmoke;

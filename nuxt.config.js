@@ -56,15 +56,11 @@ export default {
           "愛知工業大学 システム工学研究会 / 愛知工業大学 システム工学研究会についての情報など このサークルの部室には、プログラミングや電子工作、インフラなどといった様々な分野の勉強ができる環境が整っています。勉強会を開いたり、作品を作ってコンテストに出したりすることもできます。",
       },
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/defult.css'
-  ],
+  css: ["@/assets/css/defult.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
