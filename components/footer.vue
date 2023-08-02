@@ -108,4 +108,10 @@ export default {
     font-size: 12px;
   }
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

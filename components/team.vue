@@ -78,4 +78,10 @@
 .web {
   filter: drop-shadow(2px 2px 2px #aaa);
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

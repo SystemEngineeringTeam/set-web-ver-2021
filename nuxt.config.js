@@ -84,6 +84,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    '@nuxtjs/markdownit',
     //"@nuxtjs/google-gtag", //google analyticsのモジュール追加
   ],
   /*
@@ -92,7 +93,9 @@ export default {
     debug: true, // デベロッパーモード
   },
   */
-
+  markdownit: {
+    injected: true
+  },
   pwa: {
     manifest: {
       name: "愛知工業大学 システム工学研究会",

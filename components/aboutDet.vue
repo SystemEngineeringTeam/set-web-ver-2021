@@ -79,6 +79,13 @@ export default {
 </script>
 
 <style scoped>
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+
 .photo:hover {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
   border-radius: 5px;

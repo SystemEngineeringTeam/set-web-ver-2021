@@ -50,4 +50,11 @@ export default {};
   opacity: 0.32;
   width: 100%;
 }
+
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

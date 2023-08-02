@@ -28,4 +28,10 @@
   height: 100%;
   background: whitesmoke;
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

@@ -33,4 +33,9 @@ p {
   text-align: center;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

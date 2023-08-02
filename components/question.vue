@@ -189,4 +189,10 @@ export default {
     max-width: 75%;
   }
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

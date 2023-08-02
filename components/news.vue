@@ -149,4 +149,10 @@ export default {
   color: gray;
   text-align: right;
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>

@@ -121,4 +121,10 @@ export default {
     margin-top: 5px;
   }
 }
+
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
 </style>
