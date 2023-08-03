@@ -1,5 +1,12 @@
 # set-web
 
+## 依存関係
+
+
+|tool | version |
+| -------- | -------- |
+| Node.js  | 16.20.1    |
+
 ## Build Setup
 
 ```bash
